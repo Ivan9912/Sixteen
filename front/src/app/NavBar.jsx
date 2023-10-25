@@ -7,13 +7,13 @@ import Link from 'next/link'
 export default function NavBar() {
     return (
         <header>
-            <nav className="w-full h-10 text-slate-50 bg-black py-6 px-10 flex items-center fixed top-0 justify-between">
-                <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-3 [&>li>a]:bg-black">
-                    <li>Contácta con nosotros vía <a href="tel:+5491157416209">11 57416209</a></li>
-                    <li><a href="mailto:ivan.maidana9912@gmail.com">ivan.maidana9912@gmail.com</a></li>
+            <nav className="w-full h-10 text-slate-50 bg-black py-6 px-10 flex items-center fixed top-0 justify-between align-middle">
+                <ul className="flex flex-grow text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-3 [&>li>a]:bg-black">
+                    <li>Contácta con nosotros vía <Link href="tel:+5491157416209">11 5741-6209</Link></li>
+                    <li className='flex flex-grow justify-end'><Link href="mailto:ivan.maidana9912@gmail.com">ivan.maidana9912@gmail.com</Link></li>
                 </ul>
             </nav>
-            <nav className="text-black bg-yellow-50 py-6 px-10 flex items-center fixed top-10 w-full justify-between">
+            <nav className="text-black bg-yellow-50 py-6 px-10 flex items-center fixed top-12 w-full justify-between">
                 <div className='flex flex-grow basis-0 justify-items-start'>
                     <Image className='basis-0' width={100} height={50} src={logo} alt='logo' />
                     <span className="font-extrabold text-lg basis-0">Sixteen</span>
