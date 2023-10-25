@@ -20,7 +20,7 @@ export default function NavBar() {
                 </div>   
                 <ul className="flex flex-grow justify-center basis-0 text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-3 [&>li>a]:text-black">
                     <li><Link href="/about-us">Catalogos</Link></li>
-                    <li><Link href="/contact-us">Ofertas</Link></li>
+                    <li><Link href="/ofertas">Ofertas</Link></li>
                     <li><Link href="/about-us">Preguntas&nbsp;Frecuentes</Link></li>
                     <li><Link href="/contact-us">Galeria</Link></li>
                     <li><Link href="/about-us">Carrito</Link></li>

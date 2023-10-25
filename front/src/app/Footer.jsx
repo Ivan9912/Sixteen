@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <div className="divide-y-2 divide-slate-200">
             <footer className="bg-white w-screen h-48">
-                <div className="py-6 px-10 flex items-center justify-between">
+                <div className="py-6 px-10 flex items-center justify-evenly">
                     <div className="flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-text-black">
                         <ul>
                             <p className="text-center font-semibold mb-3">Sucursales</p>
