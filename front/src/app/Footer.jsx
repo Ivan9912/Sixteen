@@ -37,7 +37,11 @@ export default function Footer() {
                     </div>
                 </div>
             </footer>
-            <div className="h-10 text-slate-50 bg-stone-700 py-4 px-10 flex items-center justify-between align-middle">
+            <div className="h-10 w-full text-slate-50 bg-stone-700 py-4 px-10 flex items-center justify-between align-middle">
+                <ul className="flex flex-grow text-sm [&>li>a]:inline-block [&>li>a]:py-3 [&>li>a]:bg-stone-700">
+                    <li>© 2023 SIXTEEN · All Rights Reserved.</li>
+                    <li className="flex flex-grow justify-end">Desarrollado por CodeCraze</li>
+                </ul>
             </div>
         </div>
     )
