@@ -31,7 +31,7 @@ export default function Footer() {
                             <li>Instagram: @mayoristaflores</li>
                             <li>Facebook: mayoristaflores.baires</li>
                             <li>Tit Tok: mayoristafloress</li>
-                            <li>Whatsapp: <Link href="tel:+5491157416210">11-5741-6210</Link></li>
+                            <li>Whatsapp: <Link href="https://api.whatsapp.com/send?phone=5491157416210">11-5741-6210</Link></li>
                             <li><Link href="tel:+5491157416209">11-5741-6209</Link>/ <Link href="tel:+5491173607225">11-7360-7225</Link></li>
                         </ul>
                     </div>
