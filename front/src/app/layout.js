@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import NavBar from './NavBar.jsx'
 import Footer from './Footer.jsx'
 import './globals.css'
+import CircleMenu from './ofertas/circleMenu.jsx'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <NavBar />
         {children}
+        <CircleMenu />
         <Footer />
       </body>
     </html>
