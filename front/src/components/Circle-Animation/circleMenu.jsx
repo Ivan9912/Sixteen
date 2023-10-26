@@ -1,63 +1,82 @@
 "use client";
 import Link from "next/link";
 import { useState } from 'react';
-import './css/circle_menu.css'
+import './css/circle_menu.css';
 
-import IconPlus from '../../../public/img_svg/add.svg'
-import IconFacebook from '../../../public/img_redes_svg/facebook96.svg'
-import IconInstagram from '../../../public/img_redes_svg/instagram96.svg'
-import IconEmail from '../../../public/img_redes_svg/gmail96.svg'
-import IconPhone from '../../../public/img_redes_svg/telefono96.svg'
-import IconTiktok from '../../../public/img_redes_svg/tiktok96.svg'
-import IconWhatsapp from '../../../public/img_redes_svg/whatsapp96.svg'
+import IconPlus from '../../../public/img_svg/add.svg';
+import IconFacebook from '../../../public/img_redes_svg/facebook96.svg';
+import IconInstagram from '../../../public/img_redes_svg/instagram96.svg';
+import IconEmail from '../../../public/img_redes_svg/gmail96.svg';
+import IconPhone from '../../../public/img_redes_svg/telefono96.svg';
+import IconTiktok from '../../../public/img_redes_svg/tiktok96.svg';
+import IconWhatsapp from '../../../public/img_redes_svg/whatsapp96.svg';
+
+const list_redes = [
+    {
+        name: "Facebook",
+        background_color: "#fff",
+        link: "https://www.facebook.com/",
+        component: <IconFacebook />
+    },
+    {
+        name: "Instagram",
+        background_color: "#fff",
+        link: "https://www.instagram.com/",
+        component: <IconInstagram />
+    },
+    {
+        name: "Gmail",
+        background_color: "#fff",
+        link: "mailto:ivan.maidana9912@gmail.com",
+        component: <IconEmail />
+    },
+    {
+        name: "Phone",
+        background_color: "#fff",
+        link: "tel:+5491157416209",
+        component: <IconPhone />
+    },
+    {
+        name: "Tik Tok",
+        background_color: "#fff",
+        link: "https://www.tiktok.com/es/",
+        component: <IconTiktok />
+    },
+    {
+        name: "Whatsapp",
+        background_color: "#fff",
+        link: "https://api.whatsapp.com/send?phone=5491157416210",
+        component: <IconWhatsapp />
+    }
+];
 
 export default function CircleMenu() {
+    const listSocial = list_redes.length;
     const [isOpen, setIsOpen] = useState(false);
-  
+
     const toggleMenu = () => {
-      setIsOpen(!isOpen);
+        setIsOpen(!isOpen);
     };
 
     return (
-        <div className="w-full flex justify-end align-middle fixed right-1 bottom-10">
-            <div className={`menu_1 ${isOpen ? 'active' : ''}`} >
-                <div className="toggle_menu">
+        <div className="w-full flex justify-end align-middle fixed right-1 bottom-10" style={{ '--list_social': listSocial }}>
+            <div className={`menu_1 ${isOpen ? 'active' : ''} min-h-[25vh] bg-fixed flex justify-center items-center relative w-[200px] h-[200px]`} >
+                <div className="toggle_menu w-14 h-14 absolute bg-white flex justify-center z-[10000] rounded-full cursor-pointer text-3xl">
                     <button onClick={toggleMenu}>
                         <IconPlus />
-                    </button>      
+                    </button>
                 </div>
-                <li style={{ '--i': 0, '--clr': '#fff' }}>
-                    <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
-                        <IconFacebook />
-                    </Link>
-                </li>
-                <li style={{ '--i': 1, '--clr': '#fff' }}>
-                    <Link target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
-                        <IconInstagram />
-                    </Link>
-                </li>
-                <li style={{ '--i': 2, '--clr': '#fff' }}>
-                    <Link target="_blank" rel="noopener noreferrer" href="mailto:ivan.maidana9912@gmail.com">
-                        <IconEmail />
-                    </Link>
-                </li>
-                <li style={{ '--i': 3, '--clr': '#fff' }}>
-                    <Link target="_blank" rel="noopener noreferrer" href="tel:+5491157416209">
-                        <IconPhone />
-                    </Link>
-                </li>
-                <li style={{ '--i': 4, '--clr': '#fff' }}>
-                    <Link target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/es/">
-                        <IconTiktok />
-                    </Link>
-                </li>
-                <li style={{ '--i': 5, '--clr': '#fff' }}>
-                    <Link target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5491157416210">
-                        <IconWhatsapp />
-                    </Link>
-                </li> 
+                {
+                    list_redes.map((red, i) => {
+                        return <li style={{ '--i': i, '--clr': red.background_color }} key={red.name}>
+                            <Link target="_blank" rel="noopener noreferrer" href={red.link}>
+                                {red.component}
+                            </Link>
+                        </li>
+                    })
+                }
                 {/* Ver si agregar box-sizing: border-box. Los logos quedan muy anchos provocando un hover no programado pero que queda bien visualmente.*/}
             </div>
         </div>
     )
-}
+};

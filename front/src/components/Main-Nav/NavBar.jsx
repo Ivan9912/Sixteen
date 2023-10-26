@@ -1,9 +1,8 @@
-import Image from 'next/image'
-import Carrito from '../../../public/img_svg/shopping_cart.svg'
-import UserSVG from '../../../public/img_svg/user-manager.svg'
-import logo from '../../../public/img_png/logo.png'
-import Link from 'next/link'
-
+import Image from 'next/image';
+import Carrito from '../../../public/img_svg/shopping_cart.svg';
+import UserSVG from '../../../public/img_svg/user-manager.svg';
+import logo from '../../../public/img_png/logo.png';
+import Link from 'next/link';
 
 export default function NavBar() {
     return (
@@ -34,4 +33,4 @@ export default function NavBar() {
             </nav>
         </header>
     )
-}
+};
