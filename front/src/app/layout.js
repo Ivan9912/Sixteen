@@ -1,8 +1,8 @@
 import { Inter } from 'next/font/google'
-import NavBar from './NavBar.jsx'
-import Footer from './Footer.jsx'
+import NavBar from '@/components/Main-Nav/NavBar.jsx'
+import Footer from '@/components/Main-Footer/Footer.jsx'
 import './globals.css'
-import CircleMenu from './ofertas/circleMenu.jsx'
+import CircleMenu from '@/components/Circle-Animation/circleMenu.jsx'
 
 const inter = Inter({ subsets: ['latin'] })
 
