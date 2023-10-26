@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Carrito from '../../public/shopping_cart.svg'
+import UserSVG from '../../public/redes/user-manager.svg'
 import logo from '../../public/logo.png'
 import Link from 'next/link'
 
@@ -28,7 +29,7 @@ export default function NavBar() {
                 </ul>
                 <ul className="flex flex-grow justify-end basis-0 text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-3 [&>li>a]:text-black">
                     <li><Link href="/"><Carrito className="w-5 h-5"/></Link></li>
-                    <li><Link href="/">User</Link></li>
+                    <li><Link href="/"><UserSVG className="w-5 h-5"/></Link></li>
                 </ul>
             </nav>
         </header>
