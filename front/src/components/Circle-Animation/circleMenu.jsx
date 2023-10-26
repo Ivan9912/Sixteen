@@ -11,7 +11,7 @@ import IconPhone from '../../../public/img_redes_svg/telefono96.svg';
 import IconTiktok from '../../../public/img_redes_svg/tiktok96.svg';
 import IconWhatsapp from '../../../public/img_redes_svg/whatsapp96.svg';
 
-const list_redes = [
+const SocialNetworks = [
     {
         name: "Facebook",
         background_color: "#fff",
@@ -51,7 +51,7 @@ const list_redes = [
 ];
 
 export default function CircleMenu() {
-    const listSocial = list_redes.length;
+    const listSocial = SocialNetworks.length;
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -67,12 +67,12 @@ export default function CircleMenu() {
                     </button>
                 </div>
                 {
-                    list_redes.map((red, i) => {
-                        return <li style={{ '--i': i, '--clr': red.background_color }} key={red.name}>
-                            <Link target="_blank" rel="noopener noreferrer" href={red.link}>
-                                {red.component}
-                            </Link>
-                        </li>
+                    SocialNetworks.map((net, i) => {
+                        return <li style={{ '--i': i, '--clr': net.background_color }} key={net.name}>
+                                    <Link target="_blank" rel="noopener noreferrer" href={net.link}>
+                                        {net.component}
+                                    </Link>
+                                </li>
                     })
                 }
                 {/* Ver si agregar box-sizing: border-box. Los logos quedan muy anchos provocando un hover no programado pero que queda bien visualmente.*/}
