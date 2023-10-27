@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <div className="divide-y-2 divide-slate-200">
-            <footer className="bg-white w-full h-48">
+            <footer className="bg-white w-full h-48 md:block flex justify-center">
                 <div className="py-6 px-10 flex items-center justify-between md:justify-evenly">
-                    <div className="flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
-                        <ul className="[&>li]:hidden [&>li]:md:block">
+                    <div className="hidden md:flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
+                        <ul className="block">
                             <p className="text-center font-semibold mb-3">Sucursales</p>
                             <li>LOCAL: Helguera 463</li>
                             <li>Flores, CABA</li>
@@ -15,8 +15,8 @@ export default function Footer() {
                             <li>Minimo de compra: 3 PRENDAS SURTIDAS</li>
                         </ul>
                     </div>
-                    <div className="flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
-                        <ul className="[&>li]:hidden [&>li]:md:block">
+                    <div className="hidden md:flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
+                        <ul className="block">
                             <p className="text-center font-semibold mb-3">Ventas Online</p>
                             <li>Pedidos por <Link href="https://www.google.com">WWW.MAYORISTAFLORES.COM.AR</Link></li>
                             <li>Minimo de compra: <b>$10000</b></li>
@@ -25,8 +25,8 @@ export default function Footer() {
                             <li>Floresta</li>
                         </ul>
                     </div>
-                    <div className="flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
-                        <ul className="[&>li]:hidden [&>li]:md:block">
+                    <div className="flex flex-col justify-center [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
+                        <ul className="flex flex-col md:block text-center md:text-start">
                             <p className="text-center font-semibold mb-3">Redes</p>
                             <li>Instagram: @mayoristaflores</li>
                             <li>Facebook: mayoristaflores.baires</li>
