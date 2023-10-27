@@ -29,7 +29,6 @@ export default function NavBar() {
                     <li className=' hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'><Link href="/ofertas">Ofertas</Link></li>
                     <li className=' hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'><Link href="/about-us">Preguntas&nbsp;Frecuentes</Link></li>
                     <li className=' hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'><Link href="/contact-us">Galeria</Link></li>
-                    <li className=' hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'><Link href="/about-us">Carrito</Link></li>
                     <li className=' hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'><Link href="/contact-us">Contacto</Link></li>
                 </ul>
                 <ul className="hidden md:static absolute md:flex flex-grow justify-end basis-0 text-sm [&>li>a]:inline-block [&>li>a]:p-3 [&>li>a]:text-black">
@@ -37,7 +36,7 @@ export default function NavBar() {
                     <li className='hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'><Link href="/"><UserSVG className="w-5 h-5" /></Link></li>
                 </ul>
                 <ul className={`md:hidden basis-0 flex justify-center content-center cursor-pointer p-3 hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl ${isOpenMenu ? 'activeMenuHamburg' : ''} hover:text-red-800`}>
-                    <span onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
+                    <span onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
                         {
                             isOpenMenu ? <LogoExit className="w-5 h-5 text-black hover:text-red-800" /> : <LogoMenuHamburg className="w-5 h-5" />
                         }
@@ -45,30 +44,40 @@ export default function NavBar() {
                 </ul>
             </nav>
             <nav className={`bg-transparent md:hidden w-screen fixed top-16 z-auto flex justify-center ${isOpenMenu ? '' : 'hidden'}`}>
-                    <div className={`w-72 h-60 bg-white justify-center flex border-b-2 border-purple-900`}>
-                        <ul className="flex flex-col w-full  items-center z-auto justify-center fixed top-16 [&>li]:text-black [&>li]:pb-2">
-                            <li className="text-base py-2 px-6 text-center border-b-2 hover:bg-purple-900  border-purple-900  hover:text-purple-600 hover:bg-transparent">
-                                <Link href="#" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
-                                    About
-                                </Link>
-                            </li>
-                            <li className="text-base py-2 px-6 text-center  border-b-2 hover:bg-purple-600  border-purple-900  hover:text-purple-600 hover:bg-transparent">
-                                <Link href="#" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
-                                    Blogs
-                                </Link>
-                            </li>
-                            <li className="text-base py-2 px-6 text-center  border-b-2 hover:bg-purple-600  border-purple-900  hover:text-purple-600 hover:bg-transparent">
-                                <Link href="#" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
-                                    Contact
-                                </Link>
-                            </li>
-                            <li className="text-base py-2 px-6 text-center  border-b-2 hover:bg-purple-600  border-purple-900  hover:text-purple-600 hover:bg-transparent">
-                                <Link href="#" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
-                                    Projects
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+                <div className={`w-72 h-72 bg-white justify-center flex border-b-2 border-purple-900`}>
+                    <ul className="flex flex-col w-full items-center z-auto justify-center fixed top-16 [&>li]:text-black [&>li]:pb-2 [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center">
+                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100 mt-6">
+                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
+                                Catalogos
+                            </Link>
+                        </li>
+                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100">
+                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
+                                Ofertas
+                            </Link>
+                        </li>
+                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100">
+                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
+                                Preguntas&nbsp;Frecuentes
+                            </Link>
+                        </li>
+                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100">
+                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
+                                Galeria
+                            </Link>
+                        </li>
+                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100">
+                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
+                                Carrito
+                            </Link>
+                        </li>
+                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100">
+                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
+                                Contato
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
     )
