@@ -4,5 +4,4 @@ export default function About() {
             <h1 className="text-3xl font-extrabold">Sobre Nosotros....</h1>
         </main>
     )
-    
 }
