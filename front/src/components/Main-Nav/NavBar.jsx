@@ -11,15 +11,15 @@ export default function NavBar() {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
 
     return (
-        <header className='divide-y-2 divide-y-reverse divide-slate-400/25'>
-            <nav className="w-screen h-10 text-slate-50 bg-stone-700 py-4 px-10 md:flex items-center fixed md:top-0 justify-between align-middle hidden">
-                <ul className="flex flex-grow text-sm [&>li>a]:inline-block [&>li>a]:py-3 [&>li>a]:bg-stone-700">
+        <header className='md:divide-y-2 md:divide-y-reverse md:divide-slate-400/25'>
+            <nav className="w-screen h-10 text-slate-50 bg-stone-700 py-4 z-[1] px-10 md:flex  items-center fixed md:top-0 justify-between align-middle hidden">
+                <ul className="flex flex-grow text-sm">
                     <li>Contácta con nosotros vía: <Link className='hover:text-slate-400' href="tel:+5491157416209">11-5741-6209</Link></li>
                     <li className='flex flex-grow justify-end hover:text-slate-400'><Link href="mailto:ivan.maidana9912@gmail.com">ivan.maidana9912@gmail.com</Link></li>
                 </ul>
             </nav>
             <nav className="text-black bg-white py-2 px-10 flex items-center fixed top-0 md:top-10 w-screen justify-between">
-                <div className='flex flex-grow basis-0 justify-items-start'>
+                <div className='flex flex-grow basis-0 justify-center md:justify-items-start'>
                     <Link href="/" className="font-extrabold text-lg basis-0 flex items-center justify-center "><span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 duration-500 hover:before:bg-white relative inline-block">
                         <span className="relative text-white duration-500 hover:text-pink-500">Sixteen</span>
                     </span></Link>
@@ -36,40 +36,39 @@ export default function NavBar() {
                     <li className='hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'><Link href="/"><Carrito className="w-5 h-5" /></Link></li>
                     <li className='hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'><Link href="/"><UserSVG className="w-5 h-5" /></Link></li>
                 </ul>
-                <ul className={`md:hidden basis-0 flex justify-center content-center cursor-pointer p-3 hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl ${isOpenMenu ? 'activeMenuHamburg top-[80px] opacity-100' : ''} hover:text-red-800`}>
+                <ul className={`md:hidden basis-0 flex justify-center content-center cursor-pointer p-3 hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl ${isOpenMenu ? 'activeMenuHamburg' : ''} hover:text-red-800`}>
                     <span onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
                         {
                             isOpenMenu ? <LogoExit className="w-5 h-5 text-black hover:text-red-800" /> : <LogoMenuHamburg className="w-5 h-5" />
                         }
                     </span>
                 </ul>
-                <div
-                    className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${isOpenMenu ? 'p-12 md:p-0 block' : 'hidden'
-                        }`}
-                >
-                    <ul className="hidden h-screen md:h-auto items-center justify-center md:flex [&>li]:text-black">
-                        <li className="pb-6 text-xl py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                            <Link href="#about" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
-                                About
-                            </Link>
-                        </li>
-                        <li className="pb-6 text-xl py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                            <Link href="#blog" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
-                                Blogs
-                            </Link>
-                        </li>
-                        <li className="pb-6 text-xl py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                            <Link href="#contact" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
-                                Contact
-                            </Link>
-                        </li>
-                        <li className="pb-6 text-xl py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
-                            <Link href="#projects" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
-                                Projects
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
+            </nav>
+            <nav className={`bg-transparent md:hidden w-screen fixed top-16 z-auto flex justify-center ${isOpenMenu ? '' : 'hidden'}`}>
+                    <div className={`w-72 h-60 bg-white justify-center flex border-b-2 border-purple-900`}>
+                        <ul className="flex flex-col w-full  items-center z-auto justify-center fixed top-16 [&>li]:text-black [&>li]:pb-2">
+                            <li className="text-base py-2 px-6 text-center border-b-2 hover:bg-purple-900  border-purple-900  hover:text-purple-600 hover:bg-transparent">
+                                <Link href="#" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
+                                    About
+                                </Link>
+                            </li>
+                            <li className="text-base py-2 px-6 text-center  border-b-2 hover:bg-purple-600  border-purple-900  hover:text-purple-600 hover:bg-transparent">
+                                <Link href="#" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
+                                    Blogs
+                                </Link>
+                            </li>
+                            <li className="text-base py-2 px-6 text-center  border-b-2 hover:bg-purple-600  border-purple-900  hover:text-purple-600 hover:bg-transparent">
+                                <Link href="#" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
+                                    Contact
+                                </Link>
+                            </li>
+                            <li className="text-base py-2 px-6 text-center  border-b-2 hover:bg-purple-600  border-purple-900  hover:text-purple-600 hover:bg-transparent">
+                                <Link href="#" onClick={() => {setIsOpenMenu(!isOpenMenu)}}>
+                                    Projects
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
             </nav>
         </header>
     )
