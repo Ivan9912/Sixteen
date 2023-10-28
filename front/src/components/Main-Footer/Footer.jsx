@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Desarrollo from "./Desarrollo";
 
 export default function Footer() {
     return (
@@ -18,7 +19,11 @@ export default function Footer() {
                     <div className="hidden md:flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
                         <ul className="block">
                             <p className="text-center font-semibold mb-3">Ventas Online</p>
-                            <li>Pedidos por <Link href="https://www.google.com">WWW.MAYORISTAFLORES.COM.AR</Link></li>
+                            <li>Pedidos por 
+                                <Link href="https://www.google.com">
+                                    WWW.MAYORISTAFLORES.COM.AR
+                                </Link>
+                            </li>
                             <li>Minimo de compra: <b>$10000</b></li>
                             <li>Envio a todo el país</li>
                             <li>Bahía blanca 718 Local 1</li>
@@ -31,18 +36,21 @@ export default function Footer() {
                             <li>Instagram: @mayoristaflores</li>
                             <li>Facebook: mayoristaflores.baires</li>
                             <li>Tit Tok: mayoristafloress</li>
-                            <li>Whatsapp: <Link href="https://api.whatsapp.com/send?phone=5491157416210">11-5741-6210</Link></li>
-                            <li><Link href="tel:+5491157416209">11-5741-6209</Link>/ <Link href="tel:+5491173607225">11-7360-7225</Link></li>
+                            <li>Whatsapp:&nbsp;
+                                <Link href="https://api.whatsapp.com/send?phone=5491157416210">
+                                    11-5741-6210
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="tel:+5491157416209">11-5741-6209</Link>
+                                /&nbsp;
+                                <Link href="tel:+5491173607225">11-7360-7225</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </footer>
-            <div className="h-10 w-full text-slate-50 bg-stone-700 py-4 px-10 flex items-center justify-center md:justify-between align-middle">
-                <ul className="flex flex-grow text-sm justify-center md:justify-center ">
-                    <li>© 2023 SIXTEEN · All Rights Reserved.</li>
-                    <li className="hidden md:flex flex-grow justify-end">Desarrollado por&nbsp; <Link href={"https://www.google.com"} className="hover:text-slate-400"> CodeCraze</Link></li>
-                </ul>
-            </div>
+            <Desarrollo />
         </div>
     )
 };
