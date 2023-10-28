@@ -45,5 +45,5 @@
 
 .menu_1.active .toggle_menu {
     transform: rotate(315deg);
-    border: 1px solid #0000003d;
+    border: 2px solid rgba(0, 0, 0, 0.239); 
 }
