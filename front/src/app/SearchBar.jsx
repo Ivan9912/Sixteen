@@ -111,7 +111,7 @@ const words = [
 export default function SearchBar () {
 
     const [activeSearch, setActiveSearch] = useState([]);
-
+ 
     const handleSearch = (e) => {
         if(e.target.value == ''){
             setActiveSearch([])
@@ -122,9 +122,9 @@ export default function SearchBar () {
 
     return  <form className='flex items-center'>
                 <div className="w-60 relative">
-                    <input type="search" name="busqueda" id="searching" placeholder="Buscar" className="w-full p-2 pl-5 rounded-full bg-slate-100 hover:bg-black/10 text-black text-xs border border-stone-400" onChange={(e) => handleSearch(e)}/>
-                    <button className='absolute right-2 top-1/2 -translate-y-1/2 p-1 bg-transparent hover:bg-black/10 text-black rounded-full'>
-                        <SearchIco className="w-3 h-3" />
+                    <input type="search" name="busqueda" id="searching" placeholder="Buscar" className="w-full p-2 pl-8 rounded-full bg-slate-100 hover:bg-black/10 text-black text-xs border border-stone-400" onChange={(e) => handleSearch(e)}/>
+                    <button className='absolute left-2 top-1/2 -translate-y-1/2 p-1 bg-transparent hover:bg-black/10 text-black rounded-full' type='button'>
+                        <SearchIco className="w-3 h-3"/> 
                     </button>
                 </div>
                 {

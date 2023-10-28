@@ -9,7 +9,7 @@ export default function MenuHamburgButton({ props }) {
     return (
         <>
             <ul className={`md:hidden basis-0 flex justify-center content-center cursor-pointer p-3 hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl ${isOpenMenu ? 'activeMenuHamburg' : ''} hover:text-red-800`}>
-                <span onClick={() => { setIsOpenMenu(!isOpenMenu, 2) }}>
+                <span onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
                     {
                         isOpenMenu ? <LogoExit className="w-5 h-5 text-black hover:text-red-800" /> : <LogoMenuHamburg className="w-5 h-5" />
                     }
