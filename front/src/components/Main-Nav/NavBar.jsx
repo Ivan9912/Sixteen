@@ -3,16 +3,12 @@ import UserSVG from '../../../public/img_svg/user-manager.jsx';
 
 import Link from 'next/link';
 import MenuHamburgButton from './Menu/MenuHamburgButton.jsx';
+import Contact from './Contact.jsx';
 
 export default function NavBar() {
     return (
         <header className='md:divide-y-2 md:divide-y-reverse md:divide-slate-400/25'>
-            <nav className="w-screen h-10 text-slate-50 bg-stone-700 py-4 z-[1] px-10 md:flex  items-center fixed md:top-0 justify-between align-middle hidden">
-                <ul className="flex flex-grow text-sm">
-                    <li>Contácta con nosotros vía: <Link className='hover:text-slate-400' href="tel:+5491157416209">11-5741-6209</Link></li>
-                    <li className='flex flex-grow justify-end hover:text-slate-400'><Link href="mailto:ivan.maidana9912@gmail.com">ivan.maidana9912@gmail.com</Link></li>
-                </ul>
-            </nav>
+            <Contact />
             <nav className="text-black bg-white py-2 px-10 flex items-center fixed top-0 md:top-10 w-screen justify-between">
                 <div className='flex flex-grow basis-0 justify-center md:justify-items-start'>
                     <Link href="/" className="font-extrabold text-lg basis-0 flex items-center justify-center "><span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 duration-500 hover:before:bg-white relative inline-block">
