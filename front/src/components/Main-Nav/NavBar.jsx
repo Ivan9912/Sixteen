@@ -1,15 +1,10 @@
-"use client";
-
 import Carrito from '../../../public/img_svg/shopping_cart.jsx';
 import UserSVG from '../../../public/img_svg/user-manager.jsx';
-import LogoMenuHamburg from '../../../public/img_svg/menu.jsx';
-import LogoExit from '../../../public/img_svg/close.jsx';
+
 import Link from 'next/link';
-import { useState } from 'react';
+import MenuHamburgButton from './Menu/MenuHamburgButton.jsx';
 
 export default function NavBar() {
-    const [isOpenMenu, setIsOpenMenu] = useState(false);
-
     return (
         <header className='md:divide-y-2 md:divide-y-reverse md:divide-slate-400/25'>
             <nav className="w-screen h-10 text-slate-50 bg-stone-700 py-4 z-[1] px-10 md:flex  items-center fixed md:top-0 justify-between align-middle hidden">
@@ -35,50 +30,8 @@ export default function NavBar() {
                     <li className='hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'><Link href="/"><Carrito className="w-5 h-5" /></Link></li>
                     <li className='hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'><Link href="/"><UserSVG className="w-5 h-5" /></Link></li>
                 </ul>
-                <ul className={`md:hidden basis-0 flex justify-center content-center cursor-pointer p-3 hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl ${isOpenMenu ? 'activeMenuHamburg' : ''} hover:text-red-800`}>
-                    <span onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
-                        {
-                            isOpenMenu ? <LogoExit className="w-5 h-5 text-black hover:text-red-800" /> : <LogoMenuHamburg className="w-5 h-5" />
-                        }
-                    </span>
-                </ul>
-            </nav>
-            <nav className={`bg-transparent md:hidden w-screen fixed top-16 z-auto flex justify-center ${isOpenMenu ? '' : 'hidden'}`}>
-                <div className={`w-72 h-72 bg-white justify-center flex border-b-2 border-purple-900`}>
-                    <ul className="flex flex-col w-full items-center z-auto justify-center fixed top-16 [&>li]:text-black [&>li]:pb-2 [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center">
-                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100 mt-6">
-                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
-                                Catalogos
-                            </Link>
-                        </li>
-                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100">
-                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
-                                Ofertas
-                            </Link>
-                        </li>
-                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100">
-                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
-                                Preguntas&nbsp;Frecuentes
-                            </Link>
-                        </li>
-                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100">
-                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
-                                Galeria
-                            </Link>
-                        </li>
-                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100">
-                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
-                                Carrito
-                            </Link>
-                        </li>
-                        <li className="hover:border-b-2 hover:border-purple-900  hover:text-purple-600 hover:bg-gray-100">
-                            <Link href="#" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
-                                Contato
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
+                <MenuHamburgButton />
             </nav>
         </header>
-    )
+    );
 };
