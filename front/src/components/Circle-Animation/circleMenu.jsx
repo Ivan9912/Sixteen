@@ -59,7 +59,7 @@ export default function CircleMenu() {
     };
 
     return (
-        <div className="w-screen hidden md:flex justify-end align-middle fixed right-1 bottom-10" style={{ '--list_social': listSocial }}>
+        <div className="w-52 hidden md:flex justify-end align-middle fixed right-1 bottom-10" style={{ '--list_social': listSocial }}>
             <div className={`menu_1 ${isOpen ? 'active' : ''} min-h-[25vh] bg-fixed flex justify-center items-center relative w-[200px] h-[200px]`} >
                 <div className="toggle_menu w-14 h-14 absolute bg-white flex justify-center z-[10000] rounded-full cursor-pointer text-3xl">
                     <button onClick={toggleMenu}>

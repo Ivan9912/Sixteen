@@ -37,7 +37,7 @@ export default function Footer() {
                             <li>Facebook: mayoristaflores.baires</li>
                             <li>Tit Tok: mayoristafloress</li>
                             <li>Whatsapp:&nbsp;
-                                <Link href="https://api.whatsapp.com/send?phone=5491157416210">
+                                <Link className="cursor-pointer" href="https://api.whatsapp.com/send?phone=5491157416210">
                                     11-5741-6210
                                 </Link>
                             </li>
