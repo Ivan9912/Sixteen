@@ -20,7 +20,7 @@ export default function Footer() {
                         <ul className="block">
                             <p className="text-center font-semibold mb-3 select-none">Ventas Online</p>
                             <li><span className="select-none">Pedidos por </span>
-                                <Link className="cursor-pointer" href="https://www.google.com">
+                                <Link className="cursor-pointer hover:underline" href="https://www.google.com">
                                     WWW.MAYORISTAFLORES.COM.AR
                                 </Link>
                             </li>
@@ -37,14 +37,14 @@ export default function Footer() {
                             <li><span className="select-none">Facebook:</span>  mayoristaflores.baires</li>
                             <li><span className="select-none">Tit Tok:</span> mayoristafloress</li>
                             <li><span className="select-none">Whatsapp: </span>
-                                <Link className="cursor-pointer" href="https://api.whatsapp.com/send?phone=5491157416210">
+                                <Link className="cursor-pointer hover:underline" href="https://api.whatsapp.com/send?phone=5491157416210">
                                     11-5741-6210
                                 </Link>
                             </li>
                             <li>
-                                <Link className="cursor-pointer" href="tel:+5491157416209">11-5741-6209</Link>
+                                <Link className="cursor-pointer hover:underline" href="tel:+5491157416209">11-5741-6209</Link>
                                 /&nbsp;
-                                <Link href="tel:+5491173607225">11-7360-7225</Link>
+                                <Link className="cursor-pointer hover:underline" href="tel:+5491173607225">11-7360-7225</Link>
                             </li>
                         </ul>
                     </div>
