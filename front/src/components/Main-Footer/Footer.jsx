@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="py-6 px-10 flex items-center justify-between md:justify-evenly">
                     <div className="hidden md:flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
                         <ul className="block">
-                            <p className="text-center font-semibold mb-3 select-none">Sucursales</p>
+                            <p className="text-center font-semibold mb-3 select-none text-pink-500">Sucursales</p>
                             <li>LOCAL: Helguera 463</li>
                             <li>Flores, CABA</li>
                             <li className="select-none">Lunes a viernes: 08:00 a 17:00</li>
@@ -18,7 +18,7 @@ export default function Footer() {
                     </div>
                     <div className="hidden md:flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
                         <ul className="block">
-                            <p className="text-center font-semibold mb-3 select-none">Ventas Online</p>
+                            <p className="text-center font-semibold mb-3 select-none text-pink-500">Ventas Online</p>
                             <li><span className="select-none">Pedidos por </span>
                                 <Link className="cursor-pointer hover:underline" href="https://www.google.com">
                                     WWW.MAYORISTAFLORES.COM.AR
@@ -32,7 +32,7 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col justify-center [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
                         <ul className="flex flex-col md:block text-center md:text-start">
-                            <p className="text-center font-semibold mb-3 select-none">Redes</p>
+                            <p className="text-center font-semibold mb-3 select-none text-pink-500">Redes</p>
                             <li><span className="select-none">Instagram: </span> @mayoristaflores</li>
                             <li><span className="select-none">Facebook:</span>  mayoristaflores.baires</li>
                             <li><span className="select-none">Tit Tok:</span> mayoristafloress</li>

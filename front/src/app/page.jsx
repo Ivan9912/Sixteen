@@ -6,7 +6,6 @@ export default function Home() {
                 <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:-z-10 before:bg-pink-500 relative inline-block">
                     <span className="relative text-white underline underline-offset-4 -z-[9]">Sixteen</span>
                 </span>
-                
             </blockquote>
         </main>
     )

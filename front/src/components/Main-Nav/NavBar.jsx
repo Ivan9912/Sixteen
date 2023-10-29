@@ -6,6 +6,10 @@ import ListSvg from './ListSvg.jsx';
 
 const listNav = [
     {
+        name: "inicio",
+        linknav:"/"
+    },
+    {
         name: "Catálogo",
         linknav:"/about-us"
     },
