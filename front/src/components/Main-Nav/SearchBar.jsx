@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import SearchIco from '../../public/img_svg/busqueda'
+import SearchIco from '../../../public/img_svg/busqueda'
 
 const words = [
     "Camiseta",
@@ -129,7 +129,7 @@ export default function SearchBar () {
                 </div>
                 {
                     activeSearch.length > 0 && (
-                        <div className='absolute top-16 right-[4.5rem] md:top-20  bg-black/20 text-black w-44 rounded-b-lg  -translate-x-1/2 flex flex-col gap-2'>
+                        <div className='absolute top-16 right-20 md:top-20  bg-black/20 text-black w-44 rounded-b-lg -translate-x-1/2 flex flex-col gap-2'>
                             {
                                 activeSearch.map((search, i) => (
                                     <span key={`${i}--${search}`} className='hover:bg-white w-full p-4 cursor-pointer'>{search}</span>
