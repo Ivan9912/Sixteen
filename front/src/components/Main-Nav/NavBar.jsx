@@ -28,6 +28,10 @@ const listNav = [
     {
         name: "Contacto", 
         linknav: "/contact-us"
+    },
+    {
+        name: "Carrito", 
+        linknav: "/contact-us"
     }
 ]
 
