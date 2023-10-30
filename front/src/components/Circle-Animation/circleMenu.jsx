@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { useState } from 'react';
-import './css/circle_menu.css';
 
 import IconPlus from '../../../public/img_svg/add.jsx';
 import IconFacebook from '../../../public/img_redes_svg/facebook96.jsx';

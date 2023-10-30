@@ -17,7 +17,7 @@ export default function MenuHamburgButton({ props }) {
             </ul>
             <nav className={`bg-transparent md:hidden w-screen fixed top-16 z-auto flex justify-center ${isOpenMenu ? '' : 'hidden'}`}>
                 <div className={`w-72 h-72 bg-white/70 justify-center flex border-b-2 border-pink-500`}>
-                    <ul className="flex flex-col w-full items-center z-auto justify-center fixed top-16 [&>li]:text-black [&>li]:pb-2 [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center [&]:first:mt-6">
+                    <ul className="flex flex-col w-full items-center z-auto justify-center fixed top-16 [&>li]:text-black [&>li]:pb-2 [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center &:first:mt-6">
                         {
                             props.map((categorias, i) => {
                                 return  <li key={`$ID-${i}-${categorias.name}`} className="hover:border-b-2 hover:border-pink-500  hover:text-pink-500 hover:bg-gray-100" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
