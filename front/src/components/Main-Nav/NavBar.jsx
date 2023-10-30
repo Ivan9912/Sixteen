@@ -1,8 +1,8 @@
 import MenuHamburgButton from './Menu/MenuHamburgButton.jsx';
 import Contact from './Contact.jsx';
 import Title from './Title.jsx';
-import ListNoSvg from './ListNoSvg.jsx';
-import ListSvg from './ListSvg.jsx'; 
+import ListNoSvg from './list/ListNoSvg.jsx';
+import ListSvg from './list/ListSvg.jsx'; 
 
 const listNav = [
     {

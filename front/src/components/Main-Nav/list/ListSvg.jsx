@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Carrito from '../../../public/img_svg/shopping_cart.jsx';
-import UserSVG from '../../../public/img_svg/user-manager.jsx';
+import Carrito from '../../../../public/img_svg/shopping_cart.jsx';
+import UserSVG from '../../../../public/img_svg/user-manager.jsx';
 import SearchBar from "@/app/SearchBar.jsx";
 
 export default function ListSvg () {
