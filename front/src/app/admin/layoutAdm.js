@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children  }) {
   return (
-    <html lang="es-419" dir="ltr">
+    <html lang="es-419">
       <body className={`${inter.className} bg-[#f5f5f5] web-scrollbar:scroll-color web-scrollbar-thumb:scroll-thumb-color`}>
         {children}
       </body>
