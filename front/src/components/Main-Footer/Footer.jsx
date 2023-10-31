@@ -4,8 +4,8 @@ import Desarrollo from "./Desarrollo";
 export default function Footer() {
     return (
         <div className="border border-t-1 border-pink-500/25">
-            <footer className="bg-white w-full h-48 md:block flex justify-center">
-                <div className="py-6 px-10 flex items-center justify-between md:justify-evenly">
+            <footer className="bg-white w-full h-56 md:block flex justify-center">
+                <div className="py-8 px-10 flex items-center justify-between md:justify-evenly">
                     <div className="hidden md:flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
                         <ul className="block">
                             <p className="text-center font-semibold mb-3 select-none text-pink-500">Sucursales</p>
