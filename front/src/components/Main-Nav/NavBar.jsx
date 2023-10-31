@@ -6,24 +6,24 @@ import ListSvg from './list/ListSvg.jsx';
 
 const listNav = [
     {
-        name: "inicio",
+        name: "Inicio",
         linknav:"/"
     },
     {
         name: "Catálogo",
-        linknav:"/about-us"
+        linknav:"/catalogue"
     },
     {
         name: "Ofertas",
-        linknav: "/ofertas"
+        linknav: "/offers"
     },
     {
         name: "Preguntas Frecuentes",
-        linknav: "/about-us"
+        linknav: "/frequent-questions"
     },
     {
-        name: "Galeria", 
-        linknav: "/contact-us",
+        name: "Galería", 
+        linknav: "/gallery",
     },
     {
         name: "Contacto", 
@@ -31,7 +31,7 @@ const listNav = [
     },
     {
         name: "Carrito", 
-        linknav: "/contact-us"
+        linknav: "/cart"
     }
 ]
 
