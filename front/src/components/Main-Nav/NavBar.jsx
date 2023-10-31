@@ -37,9 +37,9 @@ const listNav = [
 
 export default function NavBar() {
     return (
-        <header className='md:divide-y-2 md:divide-y-reverse md:divide-slate-400/25'>
+        <header className='md:divide-y-2 md:divide-y-reverse md:divide-pink-500/25'>
             <Contact />
-            <nav className="text-black bg-white py-2 px-10 flex items-center fixed top-0 md:top-10 w-screen justify-between">
+            <nav className="text-black bg-white py-2 px-10 h-auto md:h-20 flex items-center fixed top-0 md:top-10 w-screen justify-between">
                 <Title />
                 <ListNoSvg props={listNav} />
                 <ListSvg />
