@@ -1,3 +1,6 @@
+import { metadata } from "../layout";
+metadata.title = 'Sixteen | Home';
+
 export default function Home() {
     return (
         <main className="flex text-black flex-col items-center justify-center h-screen select-none">

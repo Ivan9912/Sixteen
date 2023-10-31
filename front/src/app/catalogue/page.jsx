@@ -1,7 +1,11 @@
+import CardBasic from "@/components/cards/CardBasic";
+import { metadata } from "../layout";
+metadata.title = 'Sixteen | Catálogo'
+
 export default function Catalogue () {
-    return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-96">
-            <h1 className="text-3xl font-extrabold">Catálogo.</h1>
-        </main>
-    )
+    return  <CardBasic title={'Catálogo.'}>
+                <div className="w-full pt-8 md:pt-10 ">
+                    <hr className="border border-pink-500/25" />
+                </div>
+            </CardBasic>
 };
