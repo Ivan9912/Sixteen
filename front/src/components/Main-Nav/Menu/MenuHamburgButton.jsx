@@ -17,10 +17,10 @@ export default function MenuHamburgButton({ props }) {
             </ul>
             <nav className={`bg-transparent md:hidden w-screen fixed top-16 z-auto flex justify-center ${isOpenMenu ? '' : 'hidden'}`}>
                 <div className={`w-72 h-72 bg-white/90 justify-center flex border-b-2 border-pink-500`}>
-                    <ul className="flex flex-col w-full items-center z-auto justify-center fixed top-16 [&>li]:text-black [&>li]:pb-2 [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center nth-2:mt-6 nth-1:hidden">
+                    <ul className="flex flex-col w-full items-center z-auto justify-center fixed top-16 [&>li]:text-black [&>li]:text-base [&>li]:py-2 [&>li]:mx-6 [&>li]:text-center nth-2:mt-6 nth-1:hidden">
                         {
                             props.map((categorias, i) => {
-                                return  <li key={`$ID-${i}-${categorias.name}`} className="w-72 hover:border-b-2 hover:border-pink-500  hover:text-pink-500 hover:bg-gray-100" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
+                                return  <li key={`$ID-${i}-${categorias.name}`} className="w-72 [&_a]:inline-block [&_a]:w-full hover:border-b-2 hover:border-pink-500  hover:text-pink-500 hover:bg-gray-100" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
                                             <Link href={categorias.linknav}>
                                                 {categorias.name}
                                             </Link>
