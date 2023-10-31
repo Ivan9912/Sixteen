@@ -20,7 +20,7 @@ export default function MenuHamburgButton({ props }) {
                     <ul className="flex flex-col w-full items-center z-auto justify-center fixed top-16 [&>li]:text-black [&>li]:pb-2 [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center nth-2:mt-6 nth-1:hidden">
                         {
                             props.map((categorias, i) => {
-                                return  <li key={`$ID-${i}-${categorias.name}`} className="hover:border-b-2 hover:border-pink-500  hover:text-pink-500 hover:bg-gray-100" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
+                                return  <li key={`$ID-${i}-${categorias.name}`} className="w-72 hover:border-b-2 hover:border-pink-500  hover:text-pink-500 hover:bg-gray-100" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
                                             <Link href={categorias.linknav}>
                                                 {categorias.name}
                                             </Link>
