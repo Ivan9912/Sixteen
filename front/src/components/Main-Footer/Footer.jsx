@@ -3,7 +3,7 @@ import Desarrollo from "./Desarrollo";
 
 export default function Footer() {
     return (
-        <div className="divide-y-2 divide-slate-200">
+        <div className="border border-t-1 border-slate-400/25">
             <footer className="bg-white w-full h-48 md:block flex justify-center">
                 <div className="py-6 px-10 flex items-center justify-between md:justify-evenly">
                     <div className="hidden md:flex flex-col [&>ul>li]:text-xs [&>ul>li]:py-1 [&>ul>li]:text-black">
