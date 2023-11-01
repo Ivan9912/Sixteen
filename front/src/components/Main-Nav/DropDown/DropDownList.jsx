@@ -96,8 +96,8 @@ const list = [
 export default function GlobalList({ title = 'Botoncito' }) {
 
     return (
-        <li className="w-24 list-none text-center mt-4 group/list_1 hover:flex">
-            <span className="inline-block border w-full border-pink-500/50 p-2 text-center text-pink-500/50 rounded hover:border-pink-500 hover:text-pink-500 hover:border-2">{`${title}`}</span>
+        <li className="list-none group/list_1 hover:flex">
+            <span className="w-full inline-block hover:box-content hover:border hover:border-zinc-300 hover:rounded hover:text-pink-500 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl p-3">{`${title}`}</span>
             <ul className="hidden group-hover/list_1:flex flex-col w-40 justify-center mt-10 absolute bg-black/75 list-none select-none [&>li]:text-white [&>li]:py-3 [&>li]:px-4 rounded-b-lg border border-black/75 [&_li]:last:hover:rounded-b-lg [&_li]:nth-1:hover:rounded-b-lg">
                 {
                     list.length > 0 && list.map((item, it) => {
