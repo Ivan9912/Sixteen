@@ -1,23 +1,48 @@
+import Link from 'next/link';
 import Next from '../../../../public/img_svg/form-next';
 const list = [
     {
         'id': 1,
         'name': 'Item 1',
         'sub_content_1': [
-            '1-Toalla',
-            '1-Jabón',
-            '1-Toalla',
-            '1-Jabón',
-            '1-Toalla',
-            '1-Jabón',
+            {
+                'name':'1-Toalla',
+                'href': '/'
+            },
+            {
+                'name':'1-Jabón',
+                'href': '/'
+            },
+            {
+                'name':'1-Toalla',
+                'href': '/'
+            },
+            {
+                'name':'1-Jabón',
+                'href': '/'
+            },
+            {
+                'name':'1-Toalla',
+                'href': '/'
+            },
+            {
+                'name':'1-Jabón',
+                'href': '/'
+            }
         ]
     },
     {
         'id': 2,
         'name': 'Item 2',
         'sub_content_1': [
-            '2-Toalla',
-            '2-Jabón'
+            {
+                'name':'2-Toalla',
+                'href': '/'
+            },
+            {
+                'name':'2-Jabón',
+                'href': '/'
+            }
         ]
     },
     {
@@ -31,17 +56,32 @@ const list = [
         'id': 4,
         'name': 'Item 4',
         'sub_content_1': [
-            '4-Toalla',
-            '4-Jabón',
-            '4-Toalla',
-            '4-Jabón',
+            {
+                'name':'4-Toalla',
+                'href': '/'
+            },
+            {
+                'name':'4-Jabón',
+                'href': '/'
+            },
+            {
+                'name':'4-Toalla',
+                'href': '/'
+            },
+            {
+                'name':'4-Jabón',
+                'href': '/'
+            }
         ]
     },
     {
         'id': 5,
         'name': 'Item 5',
         'sub_content_1': [
-            '5-Toalla',
+            {
+                'name':'5-Toalla',
+                'href': '/'
+            }
         ]
     },
     {
@@ -72,7 +112,7 @@ export default function GlobalList({ title = 'Botoncito' }) {
                                                 item.sub_content_1.length > 0 && item.sub_content_1.map((item_2, i) => {
                                                     return (
                                                         <li key={`${item_2.name}-${i}`} className="w-full relative hover:bg-white hover:text-black flex flex-row justify-center">
-                                                            {item_2}
+                                                            <Link className='w-full' href={item_2.href}>{item_2.name}</Link>
                                                         </li>
                                                     )
                                                 })
