@@ -1,17 +1,174 @@
-import MenuHamburgButton from './Menu/MenuHamburgButton.jsx';
 import Contact from './Contact.jsx';
 import Title from './Title.jsx';
 import ListNoSvg from './list/ListNoSvg.jsx';
-import ListSvg from './list/ListSvg.jsx'; 
+import ListSvg from './list/ListSvg.jsx';
 
 const listNav = [
     {
         name: "Inicio",
-        linknav:"/"
+        linknav: "/"
     },
     {
         name: "Catálogo",
-        linknav:"/catalogue"
+        linknav: "/catalogue",
+        list: [
+            {
+                'id': 1,
+                'name': 'VESTIDOS',
+                'sub_content_1': [
+                    {
+                        'name': 'VALE',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'BÁSICO RULETEX',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'RAYADO CON TAJO',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'LARGO RAYADO',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'MORLEY RAYADO',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'FRUNCIDO SPORT',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'TIRA CON RULETEX',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'CHOMBA',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'FRUNCIDO MORLEY',
+                        'href': '/'
+                    }
+                ]
+            },
+            {
+                'id': 2,
+                'name': 'TOPS',
+                'sub_content_1': [
+                    {
+                        'name': 'VENICE',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'FRANCESCA',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'CAROLA',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'SOPHIE',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'EMMA',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'CHOMBA',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'SHINE',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'ISA',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'ARGOLLA',
+                        'href': '/'
+                    }
+                ]
+            },
+            {
+                'id': 3,
+                'name': 'REMERONES',
+                'sub_content_1': [
+                    {
+                        'name': 'OVERSIZE ESTAMPADOS',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'ALGODÓN SUBLIMADOS',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'ESTAMPADOS',
+                        'href': '/'
+                    }
+                ]
+            },
+            {
+                'id': 4,
+                'name': 'REMERAS',
+                'sub_content_1': [
+                    {
+                        'name': 'MODAL VISCOSA',
+                        'href': '/'
+                    }
+                ]
+            },
+            {
+                'id': 5,
+                'name': 'PANTALONES',
+                'sub_content_1': [
+                    {
+                        'name': 'PALAZZO',
+                        'href': '/'
+                    }
+                ]
+            },
+            {
+                'id': 6,
+                'name': 'LONAS',
+                'href': '/catalogue',
+                'sub_content_1': [
+
+                ]
+            },
+            {
+                'id': 7,
+                'name': 'BODYS',
+                'sub_content_1': [
+                    {
+                        'name': 'GOTA',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'ESPALDA X',
+                        'href': '/'
+                    },
+                    {
+                        'name': 'BÁSICO',
+                        'href': '/'
+                    }
+                ]
+            },
+            {
+                'id': 8,
+                'name': 'Promociones',
+                'href': '/catalogue',
+                'sub_content_1': [
+
+                ]
+            }
+        ]
     },
     {
         name: "Ofertas",
@@ -22,15 +179,15 @@ const listNav = [
         linknav: "/frequent-questions"
     },
     {
-        name: "Galería", 
+        name: "Galería",
         linknav: "/gallery",
     },
     {
-        name: "Contacto", 
+        name: "Contacto",
         linknav: "/contact-us"
     },
     {
-        name: "Carrito", 
+        name: "Carrito",
         linknav: "/cart"
     }
 ]
@@ -43,7 +200,6 @@ export default function NavBar() {
                 <Title />
                 <ListNoSvg props={listNav} />
                 <ListSvg />
-                <MenuHamburgButton props={listNav} />
             </nav>
         </header>
     );
