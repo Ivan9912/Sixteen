@@ -3,92 +3,158 @@ import Next from '../../../../public/img_svg/form-next';
 const list = [
     {
         'id': 1,
-        'name': 'Item 1',
+        'name': 'VESTIDOS',
         'sub_content_1': [
             {
-                'name':'1-Toalla',
+                'name':'VALE',
                 'href': '/'
             },
             {
-                'name':'1-Jabón',
+                'name':'BÁSICO RULETEX',
                 'href': '/'
             },
             {
-                'name':'1-Toalla',
+                'name':'RAYADO CON TAJO',
                 'href': '/'
             },
             {
-                'name':'1-Jabón',
+                'name':'LARGO RAYADO',
                 'href': '/'
             },
             {
-                'name':'1-Toalla',
+                'name':'MORLEY RAYADO',
                 'href': '/'
             },
             {
-                'name':'1-Jabón',
+                'name':'FRUNCIDO SPORT',
+                'href': '/'
+            },
+            {
+                'name':'TIRA CON RULETEX',
+                'href': '/'
+            },
+            {
+                'name':'CHOMBA',
+                'href': '/'
+            },
+            {
+                'name':'FRUNCIDO MORLEY',
                 'href': '/'
             }
         ]
     },
     {
         'id': 2,
-        'name': 'Item 2',
+        'name': 'TOPS',
         'sub_content_1': [
             {
-                'name':'2-Toalla',
+                'name':'VENICE',
                 'href': '/'
             },
             {
-                'name':'2-Jabón',
+                'name':'FRANCESCA',
+                'href': '/'
+            },
+            {
+                'name':'CAROLA',
+                'href': '/'
+            },
+            {
+                'name':'SOPHIE',
+                'href': '/'
+            },
+            {
+                'name':'EMMA',
+                'href': '/'
+            },
+            {
+                'name':'CHOMBA',
+                'href': '/'
+            },
+            {
+                'name':'SHINE',
+                'href': '/'
+            },
+            {
+                'name':'ISA',
+                'href': '/'
+            },
+            {
+                'name':'ARGOLLA',
+                'href': '/'
+            }      
+        ]
+    },
+    {
+        'id': 3,
+        'name': 'REMERONES',
+        'sub_content_1': [
+            {
+                'name':'OVERSIZE ESTAMPADOS',
+                'href': '/'
+            },
+            {
+                'name':'ALGODÓN SUBLIMADOS',
+                'href': '/'
+            },
+            {
+                'name':'ESTAMPADOS',
                 'href': '/'
             }
         ]
     },
     {
-        'id': 3,
-        'name': 'Item 3',
-        'sub_content_1': [
-
-        ]
-    },
-    {
         'id': 4,
-        'name': 'Item 4',
+        'name': 'REMERAS',
         'sub_content_1': [
             {
-                'name':'4-Toalla',
-                'href': '/'
-            },
-            {
-                'name':'4-Jabón',
-                'href': '/'
-            },
-            {
-                'name':'4-Toalla',
-                'href': '/'
-            },
-            {
-                'name':'4-Jabón',
+                'name':'MODAL VISCOSA',
                 'href': '/'
             }
         ]
     },
     {
         'id': 5,
-        'name': 'Item 5',
+        'name': 'PANTALONES',
         'sub_content_1': [
             {
-                'name':'5-Toalla',
+                'name':'PALAZZO',
                 'href': '/'
             }
         ]
     },
     {
         'id': 6,
-        'name': 'Item 6',
+        'name': 'LONAS',
         'sub_content_1': [
+            {
 
+            }
+        ]
+    },
+    {
+        'id': 7,
+        'name': 'BODYS',
+        'sub_content_1': [
+            {
+                'name':'GOTA',
+                'href': '/'
+            },
+            {
+                'name':'ESPALDA X',
+                'href': '/'
+            },
+            {
+                'name':'BÁSICO',
+                'href': '/'
+            }
+        ]
+    },
+    {
+        'id': 8,
+        'name': 'Promociones',
+        'sub_content_1': [
+            
         ]
     }
 ];
