@@ -1,7 +1,7 @@
 import Contact from './Contact.jsx';
 import Title from './Title.jsx';
-import ListNoSvg from './list/ListNoSvg.jsx';
-import ListSvg from './list/ListSvg.jsx';
+import ListNoSvg from './List/ListNoSvg.jsx';
+import ListSvg from './List/ListSvg.jsx';
 
 const listNav = [
     {
