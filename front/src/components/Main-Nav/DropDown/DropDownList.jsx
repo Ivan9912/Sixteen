@@ -127,9 +127,7 @@ const list = [
         'id': 6,
         'name': 'LONAS',
         'sub_content_1': [
-            {
 
-            }
         ]
     },
     {
@@ -172,8 +170,8 @@ export default function GlobalList({ title = 'Botoncito' }) {
                                 {item.name}
                                 {
                                     item.sub_content_1.length > 0 && <div className='absolute right-2 invisible group-hover/list_next:visible group/list_2 hover:flex'>
-                                        <Next className="  w-5 h-5 hover:border hover:border-black/50 hover:rounded-full " />
-                                        <ul className='absolute hidden ml-4 group-hover/list_2:flex flex-col w-40 justify-center bg-black/75 list-none select-none [&>li]:text-white [&>li]:py-3 [&>li]:px-4 rounded-b-lg border border-black/75 [&_li]:last:hover:rounded-b-lg [&_li]:nth-1:hover:rounded-b-lg'>
+                                        <Next className="w-5 h-5 hover:border hover:border-black/50 hover:rounded-full " />
+                                        <ul key={`${item.name}-${it}`} className='absolute hidden ml-4 group-hover/list_2:flex flex-col w-40 justify-center bg-black/75 list-none select-none [&>li]:text-white [&>li]:py-3 [&>li]:px-4 rounded-b-lg border border-black/75 [&_li]:last:hover:rounded-b-lg [&_li]:nth-1:hover:rounded-b-lg'>
                                             {
                                                 item.sub_content_1.length > 0 && item.sub_content_1.map((item_2, i) => {
                                                     return (

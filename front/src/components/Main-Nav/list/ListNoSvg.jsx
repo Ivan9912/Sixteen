@@ -7,7 +7,7 @@ export default function ListNoSvg({ props }) {
             props.map((categorias, i) => {
                 return (
                     categorias.name == 'Catálogo' ? 
-                        (<GlobalList title={categorias.name} />) 
+                        (<GlobalList key={`$ID-${i}DROP`} title={categorias.name} />) 
                         : 
                         (<li key={`$ID-${i}`} className='hover:box-content hover:border hover:border-zinc-300 hover:rounded [&>a]:hover:text-pink-500 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl'>
                             <Link href={categorias.linknav}>{categorias.name}</Link>
