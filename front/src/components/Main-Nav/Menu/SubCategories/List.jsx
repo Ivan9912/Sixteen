@@ -7,12 +7,13 @@ export default function List({ props }) {
     return <>
         {
             props.map((categorias, i) => {
-                return <li key={`$ID-${i}-${categorias.name}`} className="w-72 [&_a]:inline-block [&_a]:w-full border-b-2 border-black/0 hover:border-b-2 hover:border-pink-500 hover:text-pink-500 hover:bg-gray-100 cursor-pointer group/sub_list_1">
+                return <li key={`$ID-${i}-${categorias.name}`} className="w-72 border-b-2 border-black/0 hover:border-b-2 hover:border-pink-500 hover:text-pink-500 hover:bg-gray-100 cursor-pointer group/sub_list_1">
                     {
                         categorias.name == 'Catálogo'
                             ?
-                            (<span onClick={() => { setIsOpenSubMenu(!isOpenSubMenu) }}>
-                                {categorias.name}
+                            (<span>
+                                <span className={`${isOpenSubMenu ? 'flex text-pink-500 border-b-4 border-pink-500': ''}`} onClick={() => { setIsOpenSubMenu(!isOpenSubMenu) }}>{categorias.name}</span>
+                                
                                 {
                                     <ul className={`mt-2 bg-gray-100/90 text-black/90 flex-col text-start [&>li]:px-3 [&>li]:py-2 [&>li]:w-full w-full ${isOpenSubMenu ? '' : 'hidden'}`}>
                                         {
@@ -23,7 +24,9 @@ export default function List({ props }) {
                                                         {
                                                             sub_1.sub_content_1.length > 0 
                                                             ?
-                                                            (<SubList props={sub_1.sub_content_1} />)
+                                                            (
+                                                                <SubList props={sub_1} />
+                                                            )
                                                             :
                                                             (<Link href={sub_1.href}>
                                                                 {sub_1.name}
