@@ -15,13 +15,13 @@ export default function MenuHamburgButton({ props }) {
                     }
                 </span>
             </ul>
-            <nav className={`bg-blaborder-black/0 md:hidden w-screen fixed top-16 z-auto flex justify-center ${isOpenMenu ? '' : 'hidden'}`}>
-                <div className={`w-72 h-auto bg-white/90 justify-center flex border-b-4 border-pink-500`}>
-                    <ul className="flex flex-col w-full items-center z-auto justify-center top-16 [&>li]:text-black [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center nth-7:mb-6 nth-2:mt-6 nth-1:hidden">
-                        <List props={props} />                       
-                    </ul>
+            <nav className={`h-80 bg-border-black/0 md:hidden w-screen fixed top-16 z-auto flex justify-center ${isOpenMenu ? '' : 'hidden'}`}>
+                <div className={`w-72 h-full bg-white/90 justify-center flex border-b-4 border-pink-500 overflow-x-hidden overflow-y-auto touch-pan-y web-scrollbar:scroll-color web-scrollbar-thumb:scroll-thumb-color`}>
+                    <List props={props} /> 
                 </div>
             </nav>
         </>
     )
 };
+
+// AGREGAR UN SCROLL PARA EL SEGUNDO UL
