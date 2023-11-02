@@ -4,14 +4,14 @@ import SubList from './SubList';
 
 export default function List({ props, state }) {
     const [isOpenSubMenu, setIsOpenSubMenu] = useState(false);
-    return <ul className={`flex flex-col w-full items-center z-auto justify-center [&>li]:text-black [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center nth-7:mb-6 nth-1:hidden ${isOpenSubMenu ? 'nth-2:mt-64' : 'nth-2:mt-4'}`}>
+    return <ul className={`flex flex-col w-full items-center z-auto justify-center [&>li]:text-black [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center nth-7:mb-2 nth-1:hidden ${isOpenSubMenu ? 'nth-2:mt-48' : 'nth-2:mt-0'}  overflow-x-hidden overflow-y-auto touch-pan-y web-scrollbar:scroll-color web-scrollbar-thumb:scroll-thumb-color`}>
         {
             props.map((categorias, i) => {
                 return <li key={`$ID-${i}-${categorias.name}`} className={`w-72 border-b-2 border-black/0 hover:border-b-2 hover:border-pink-500 hover:text-pink-500 hover:bg-gray-100 cursor-pointer group/sub_list_1 `}>
                     {
                         categorias.name == 'Catálogo'
                             ?
-                            (<span>
+                            (<span className={`${isOpenSubMenu ? 'h-56' : 'h-auto'} flex flex-col overflow-x-hidden overflow-y-auto touch-pan-y web-scrollbar:scroll-color web-scrollbar-thumb:scroll-thumb-color`}>
                                 <span className={`${isOpenSubMenu ? 'flex text-pink-500 border-b-4 border-pink-500' : ''}`} onClick={() => { setIsOpenSubMenu(!isOpenSubMenu) }}>{categorias.name}</span>
 
                                 {
