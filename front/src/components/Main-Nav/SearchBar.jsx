@@ -106,37 +106,37 @@ const words = [
     "Blusa de seda",
     "Shorts vaqueros",
     "Pantalones de vestir"
-  ];
-  
-export default function SearchBar () {
+];
+
+export default function SearchBar() {
 
     const [activeSearch, setActiveSearch] = useState([]);
- 
+
     const handleSearch = (e) => {
-        if(e.target.value == ''){
+        if (e.target.value == '') {
             setActiveSearch([])
             return false
         }
-        setActiveSearch(words.filter(word => word.includes(e.target.value)).slice(0,8))
+        setActiveSearch(words.filter(word => word.includes(e.target.value)).slice(0, 8))
     }
 
-    return  <form className='hidden min-[1073px]:flex items-center px-3'>
-                <div className="w-60 relative">
-                    <input type="search" name="busqueda" id="searching" placeholder="Buscar" className="w-full p-2 pl-8 rounded-full bg-slate-100 hover:bg-black/10 text-black text-xs border border-stone-400 focus:border-transparent" onChange={(e) => handleSearch(e)}/>
-                    <button className='absolute left-2 top-1/2 -translate-y-1/2 p-1 bg-transparent hover:bg-black/10 text-black rounded-full' type='button'>
-                        <SearchIco className="w-3 h-3"/> 
-                    </button>
+    return <form className='hidden min-[1073px]:flex items-center px-3'>
+        <div className="w-60 relative">
+            <input type="search" name="busqueda" id="searching" placeholder="Buscar" className="w-full p-2 pl-8 rounded-full bg-slate-100 hover:bg-black/10 text-black text-xs border border-stone-400 focus:border-transparent" onChange={(e) => handleSearch(e)} />
+            <button className='absolute left-2 top-1/2 -translate-y-1/2 p-1 bg-transparent hover:bg-black/10 text-black rounded-full' type='button'>
+                <SearchIco className="w-3 h-3" />
+            </button>
+        </div>
+        {
+            activeSearch.length > 0 && (
+                <div className='absolute top-14 lg:right-[51px] bg-black/20 text-black w-52 rounded-b-lg -translate-x-1/2 flex flex-col gap-2'>
+                    {
+                        activeSearch.map((search, i) => (
+                            <span key={`${i}--${search}`} className='hover:bg-white w-full p-4 cursor-pointer'>{search}</span>
+                        ))
+                    }
                 </div>
-                {
-                    activeSearch.length > 0 && (
-                        <div className='absolute top-14 lg:right-[51px] bg-black/20 text-black w-52 rounded-b-lg -translate-x-1/2 flex flex-col gap-2'>
-                            {
-                                activeSearch.map((search, i) => (
-                                    <span key={`${i}--${search}`} className='hover:bg-white w-full p-4 cursor-pointer'>{search}</span>
-                                ))
-                            }
-                        </div>
-                    )
-                }
-            </form>
+            )
+        }
+    </form>
 };

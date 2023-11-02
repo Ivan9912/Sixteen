@@ -68,10 +68,10 @@ export default function CircleMenu() {
                 {
                     SocialNetworks.map((net, i) => {
                         return <li style={{ '--i': i, '--clr': net.background_color }} key={net.name}>
-                                    <Link target="_blank" rel="noopener noreferrer" href={net.link}>
-                                        {net.component}
-                                    </Link>
-                                </li>
+                            <Link target="_blank" rel="noopener noreferrer" href={net.link}>
+                                {net.component}
+                            </Link>
+                        </li>
                     })
                 }
                 {/* Ver si agregar box-sizing: border-box. Los logos quedan muy anchos provocando un hover no programado pero que queda bien visualmente.*/}

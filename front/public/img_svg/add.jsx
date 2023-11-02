@@ -8,7 +8,7 @@ export default function AddSVG(props) {
       className="hover:text-pink-500"
       {...props}
     >
-      <path d="M12 22V2M2 12h20" fill="none" stroke="currentColor"  strokeWidth={2} />
+      <path d="M12 22V2M2 12h20" fill="none" stroke="currentColor" strokeWidth={2} />
     </svg>
   )
 }
