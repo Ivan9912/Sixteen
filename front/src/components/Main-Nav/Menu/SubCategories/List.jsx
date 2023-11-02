@@ -4,7 +4,7 @@ import SubList from './SubList';
 
 export default function List({ props, state }) {
     const [isOpenSubMenu, setIsOpenSubMenu] = useState(false);
-    return <ul className={`flex flex-col w-full items-center z-auto justify-center [&>li]:text-black [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center nth-7:mb-2 nth-1:hidden ${isOpenSubMenu ? 'nth-2:mt-48' : 'nth-2:mt-0'}  overflow-x-hidden overflow-y-auto touch-pan-y web-scrollbar:scroll-color web-scrollbar-thumb:scroll-thumb-color`}>
+    return <ul className={`flex flex-col w-full items-center z-auto justify-center [&>li]:text-black [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center nth-7:mb-2 nth-1:hidden ${isOpenSubMenu ? 'nth-2:mt-48' : 'nth-2:mt-0'}  overflow-x-hidden overflow-y-auto touch-pan-y web-scrollbar:scroll-color web-scrollbar-thumb:scroll-thumb-color select-none`}>
         {
             props.map((categorias, i) => {
                 return <li key={`$ID-${i}-${categorias.name}`} className={`w-72 border-b-2 border-black/0 hover:border-b-2 hover:border-pink-500 hover:text-pink-500 hover:bg-gray-100 cursor-pointer group/sub_list_1 `}>
