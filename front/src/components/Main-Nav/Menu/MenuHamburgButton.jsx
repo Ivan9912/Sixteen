@@ -15,8 +15,9 @@ export default function MenuHamburgButton({ props }) {
                     }
                 </span>
             </ul>
-            <nav className={`h-80 bg-border-black/0 md:hidden w-screen fixed top-16 z-auto flex justify-center ${isOpenMenu ? '' : 'hidden'}`}>
-                <div className={`w-72 h-full bg-white/90 justify-center flex border-b-4 border-pink-500 overflow-x-hidden overflow-y-auto touch-pan-y web-scrollbar:scroll-color web-scrollbar-thumb:scroll-thumb-color`}>
+            <nav className={`h-screen md:hidden bg-black/0 w-screen fixed top-16 left-0 z-auto flex justify-center ${isOpenMenu ? '' : 'hidden'}`}>
+                <div className='absolute z-[4] w-full h-full bg-black/10' onClick={() => { setIsOpenMenu(!isOpenMenu) }}></div>
+                <div className={`z-[5] absolute w-72 h-80 bg-white/90 justify-center flex bg-border-black/0 border-b-4 border-pink-500 overflow-x-hidden overflow-y-auto touch-pan-y web-scrollbar:scroll-color web-scrollbar-thumb:scroll-thumb-color`}>
                     <List props={props} /> 
                 </div>
             </nav>

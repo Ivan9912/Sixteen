@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link.js';
 import SubList from './SubList';
 
-export default function List({ props }) {
+export default function List({ props, state }) {
     const [isOpenSubMenu, setIsOpenSubMenu] = useState(false);
     return <ul className={`flex flex-col w-full items-center z-auto justify-center [&>li]:text-black [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center nth-7:mb-6 nth-1:hidden ${isOpenSubMenu ? 'nth-2:mt-64' : 'nth-2:mt-4'}`}>
         {
