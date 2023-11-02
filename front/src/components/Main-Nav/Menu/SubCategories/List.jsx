@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Link from 'next/link.js';
+import SubList from './SubList';
 
-export default function SubList1({ props }) {
+export default function List({ props }) {
     const [isOpenSubMenu, setIsOpenSubMenu] = useState(false);
     return <>
         {
@@ -17,8 +18,18 @@ export default function SubList1({ props }) {
                                         {
                                             categorias.list.map((sub_1, i) => {
                                                 return (
-                                                    <li key={`${sub_1}+-${i}`} className='text-xs border-b-2 border-black/0 hover:border-b-2 hover:border-pink-500 hover:text-pink-500 bg-gray-200 cursor-pointer group-hover/sub_list_1:bg-gray-300/90'>   
-                                                        {sub_1.name}
+                                                    <li key={`${sub_1}+-${i}`} className='text-xs border-b-2 border-black/0 hover:border-b-2 hover:border-pink-500 hover:text-pink-500 bg-gray-200 cursor-pointer group-hover/sub_list_1:bg-gray-300/90'>                                                
+                                                        
+                                                        {
+                                                            sub_1.sub_content_1.length > 0 
+                                                            ?
+                                                            (<SubList props={sub_1.sub_content_1} />)
+                                                            :
+                                                            (<Link href={sub_1.href}>
+                                                                {sub_1.name}
+                                                            </Link>)
+
+                                                        }
                                                     </li>
                                                 )
                                             })

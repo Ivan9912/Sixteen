@@ -1,7 +1,6 @@
 "use client";
 import LogoMenuHamburg from '../../../../public/img_svg/menu.jsx';
 import LogoExit from '../../../../public/img_svg/close.jsx';
-
 import { useState } from 'react';
 import SubList1 from './SubCategories/List.jsx';
 
@@ -19,8 +18,7 @@ export default function MenuHamburgButton({ props }) {
             <nav className={`bg-blaborder-black/0 md:hidden w-screen fixed top-16 z-auto flex justify-center ${isOpenMenu ? '' : 'hidden'}`}>
                 <div className={`w-72 h-auto bg-white/90 justify-center flex border-b-4 border-pink-500`}>
                     <ul className="flex flex-col w-full items-center z-auto justify-center top-16 [&>li]:text-black [&>li]:text-base [&>li]:py-2 [&>li]:px-6 [&>li]:text-center nth-7:mb-6 nth-2:mt-6 nth-1:hidden">
-                        <SubList1 props={props} />
-                       
+                        <SubList1 props={props} />                       
                     </ul>
                 </div>
             </nav>
