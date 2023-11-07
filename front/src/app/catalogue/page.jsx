@@ -9,7 +9,6 @@ export default function Catalogue() {
             <hr className="border border-pink-500/25" />
             <div className="w-full flex flex-col items-center justify-center">
             </div>
-            <h1>Puebaa</h1>
         </div>
     </CardBasic>
 };
