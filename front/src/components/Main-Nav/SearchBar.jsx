@@ -129,10 +129,10 @@ export default function SearchBar() {
         </div>
         {
             activeSearch.length > 0 && (
-                <div className='absolute top-14 lg:right-[51px] bg-black/20 text-black w-52 rounded-b-lg -translate-x-1/2 flex flex-col gap-2'>
+                <div className='absolute top-14 lg:right-[51px] bg-white bg-black/20 text-black w-52 rounded-b-lg -translate-x-1/2 flex flex-col gap-2'>
                     {
                         activeSearch.map((search, i) => (
-                            <span key={`${i}--${search}`} className='hover:bg-white w-full p-4 cursor-pointer'>{search}</span>
+                            <span key={`${i}--${search}`} className='hover:bg-black/20 w-full p-4 cursor-pointer'>{search}</span>
                         ))
                     }
                 </div>
