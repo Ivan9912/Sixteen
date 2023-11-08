@@ -1,48 +1,34 @@
-'use client'
-import { Carousel } from "@material-tailwind/react";
-import Image from "next/image";
- 
-export function NavCarrousel() {
-  return (
-    <div className=" ">
-        <Carousel
-        className="rounded-xl"
-        navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div className="absolute bottom-4 left-2/4 z-1 flex -translate-x-2/4 gap-2">
-            {new Array(length).fill("").map((index, i) => {
-                return <span
-                key={i}
-                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                    activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                }`}
-                onClick={() => setActiveIndex(i)}
-                />
-                })}
+import { useState } from 'react';
+import Next from '../../../public/img_svg/form-next';
+import Previous from '../../../public/img_svg/form-previous';
+
+export default function Carrousel({ children: cont }) {
+
+    const [curr, setCurr] = useState(0);
+
+    const prev = () => {
+        setCurr((c) => {
+            return c === 0 ? cont.length - 1 : c - 1;
+        })
+    };
+
+    const next = () => {
+        setCurr((c) => {
+            return c === cont.length - 1 ? 0 : c + 1;
+        })
+    };
+
+    return (       
+        <div className="overflow-hidden relative">            
+            <div className="flex transition-transform ease-out duration-500" style={{ transform: `translateX(-${curr * 100}%)` }}>{cont}</div>
+            <div className='absolute inset-0 flex items-center justify-between p-4'>
+                <button className='p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white' onClick={prev}>
+                    <Previous size={40} />
+                </button>
+                <button className='p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white' onClick={next}>
+                    <Next size={40} />
+                </button>
             </div>
-        )}
-        >
-        <Image
-            src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-            alt="image 1"
-            className="object-cover"
-            width={50}
-            height={50}
-        />
-        <Image
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-            alt="image 2"
-            className="object-cover"
-            width={50}
-            height={50}
-        />
-        <Image
-            src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-            alt="image 3"
-            className="object-cover"
-            width={50}
-            height={50}
-        />
-        </Carousel>
-    </div>
-  );
-}
+        </div>
+    )
+};
