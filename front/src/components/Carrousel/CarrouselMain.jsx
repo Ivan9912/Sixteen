@@ -15,8 +15,8 @@ const videos = [
 export default function CarrouselMain() {
     return (
         <main>
-            <div className="w-full bg-black flex flex-row justify-center">
-                <Carrousel autoSlice={true} autoSlideInterval={9000}>
+            <div className="w-full flex flex-row justify-center">
+                <Carrousel autoSlice={false} autoSlideInterval={9000}>
                     {
                         [ ... images.map( (image) => (
                             <Image src={`https://i.imgur.com/${image}.jpg`} width={1800} height={600} key={`${image}`} alt={`${image}`} priority={true}/>

@@ -20,22 +20,25 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
 
     useEffect(() => {
         if (autoSlice) {
-        const slideInterval = setInterval(next, autoSlideInterval + 1000);
-        return () => clearInterval(slideInterval);}
+            const slideInterval = setInterval(next, autoSlideInterval + 1000);
+            return () => clearInterval(slideInterval);
+        }
     }, [])
 
-    return (       
-        <div className="overflow-hidden relative flex w-full">            
-            <div className="flex w-full transition-transform ease-out duration-1000 z-0" style={{ transform: `translateX(-${curr * 100}%)` }}>{cont}</div>
-            <div className='absolute z-[1] inset-0 flex items-center flex-grow w-full h-full hover:bg-black/30'>
+    return (
+        <div className="overflow-hidden relative flex w-full">
+            <div className='absolute  bg-black w-full h-full'>
+            </div>
+            <div className="flex w-full transition-transform ease-out duration-1000" style={{ transform: `translateX(-${curr * 100}%)` }}>{cont}</div>
+            <div className='absolute  inset-0 flex items-center flex-grow w-full h-full hover:bg-black/30'>
 
-                <div className=' flex items-center p-4 '>
+                <div className=' flex items-center p-4'>
                     <button className='p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white' onClick={prev}>
                         <Previous size={40} />
                     </button>
                 </div>
                 <div className='w-full h-full'></div>
-                <div className=' flex items-center p-4 '>
+                <div className=' flex items-center p-4'>
 
                     <button className='p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white' onClick={next}>
                         <Next size={40} />
@@ -46,12 +49,12 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
                 <div className='flex items-center justify-center gap-0'>
                     {
                         cont.map((_, i) => {
-                            return <div 
-                                className={`transition-all w-3 h-3 bg-white rounded-full ${curr === i ? 'p-2' : 'bg-opacity-50'}`}
+                            return <div
+                                className={`transition-all w-3 h-3 ml-2 bg-white rounded-full ${curr === i ? 'p-2' : 'bg-opacity-50'}`}
                                 key={`${i}-C`}
                             />
                         })
-                    }                    
+                    }
                 </div>
             </div>
         </div>
