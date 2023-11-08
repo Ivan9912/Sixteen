@@ -16,7 +16,7 @@ export default function CarrouselMain() {
     return (
         <main>
             <div className="w-full flex flex-row justify-center">
-                <Carrousel autoSlice={true} autoSlideInterval={9000}>
+                <Carrousel autoSlice={true} autoSlideInterval={10000}>
                     {
                         [ ... images.map( (image) => (
                             <Image src={`https://i.imgur.com/${image}.jpg`} width={1800} height={600} key={`${image}`} alt={`${image}`} priority={true}/>

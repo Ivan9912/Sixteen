@@ -37,9 +37,16 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
                         <Previous size={40} />
                     </button>
                 </div>
-                <div className='w-full h-full'></div>
+                <div className='w-full h-full flex flex-row items-center'>
+                    <div className='w-6/12'></div>
+                    <div className='flex flex-col bg-black/70 mt-0 items-center p-4 rounded mb-40'>
+                        <div className=' mb-8 '>
+                            <h1 className='text-pink-500/50 text-9xl'>{'Hola\nCoders'}</h1>
+                        </div>
+                        <button className='px-4 py-2 text-white font-bold rounded-md transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300'>Ver Más</button>
+                    </div>
+                </div>
                 <div className=' flex items-center p-4'>
-
                     <button className='p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white' onClick={next}>
                         <Next size={40} />
                     </button>
