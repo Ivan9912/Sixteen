@@ -2,22 +2,27 @@
 import Image from "next/image";
 import Carrousel from "./Carrousel";
 const images = [
-    "Carrousel01",
-    "Carrousel02",
-    "Carrousel03"
+    "E3eVdMK",
+    "0KzMgY9",
+    "zfce9BB"
 ];
+
+const videos = [
+    "A2s9Iiv"
+]
 
 
 export default function CarrouselMain() {
     return (
-        <main className="carroulselApp">
-            <div className="w-full">
-                <Carrousel>
+        <main>
+            <div className="w-full bg-black flex flex-row justify-center">
+                <Carrousel autoSlice={true} autoSlideInterval={9000}>
                     {
-                        images.map((image) => (
-                            <Image src={require(`../../../public/img_png/${image}.jpg`).default} width={1400} height={500} key={`${image}`} alt={`${image}`} priority={true}/>
-                        ))
-                    }
+                        [ ... images.map( (image) => (
+                            <Image src={`https://i.imgur.com/${image}.jpg`} width={1800} height={600} key={`${image}`} alt={`${image}`} priority={true}/>
+                        )),
+                        <video key={`${videos}-V`} src={`https://i.imgur.com/${videos}.mp4`} width={1800} height={600} className="pl-8" autoPlay loop muted />
+                    ]}
                 </Carrousel>
             </div>
         </main>

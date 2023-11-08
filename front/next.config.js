@@ -20,7 +20,8 @@ const nextConfig = {
         remotePatterns: [
           {
             protocol: 'https',
-            hostname: 'images.unsplash.com',
+            hostname: 'i.imgur.com',
+            pathname: '/**'
           },
         ],
       },
