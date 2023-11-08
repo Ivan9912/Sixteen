@@ -87,7 +87,7 @@ module.exports = {
               'align-items': 'center',
               width: '40px',
               height: '40px',
-              background: 'var(--clr)',
+              'background-color': 'var(--clr)',
               'border-radius': '50%',
               transform: 'rotate(calc(360deg / calc(var(--list_social) * -1) * var(--i)))',
               'box-shadow': '0 3px 4px #ec489926',

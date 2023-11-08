@@ -13,37 +13,37 @@ import IconWhatsapp from '../../../public/img_redes_svg/whatsapp96.jsx';
 const SocialNetworks = [
     {
         name: "Facebook",
-        background_color: "#0000001d",
+        background_color: "rgba(256, 256, 256, .7)",
         link: "https://www.facebook.com/",
         component: <IconFacebook />
     },
     {
         name: "Instagram",
-        background_color: "#0000001d",
+        background_color: "rgba(256, 256, 256, .7)",
         link: "https://www.instagram.com/",
         component: <IconInstagram />
     },
     {
         name: "Gmail",
-        background_color: "#0000001d",
+        background_color: "rgba(256, 256, 256, .7)",
         link: "mailto:ivan.maidana9912@gmail.com",
         component: <IconEmail />
     },
     {
         name: "Phone",
-        background_color: "#0000001d",
+        background_color: "rgba(256, 256, 256, .7)",
         link: "tel:+5491157416209",
         component: <IconPhone />
     },
     {
         name: "Tik Tok",
-        background_color: "#0000001d",
+        background_color: "rgba(256, 256, 256, .7)",
         link: "https://www.tiktok.com/es/",
         component: <IconTiktok />
     },
     {
         name: "Whatsapp",
-        background_color: "#0000001d",
+        background_color: "rgba(256, 256, 256, .7)",
         link: "https://api.whatsapp.com/send?phone=5491157416210",
         component: <IconWhatsapp />
     }
