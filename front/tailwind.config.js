@@ -122,7 +122,7 @@ module.exports = {
         '.shimpg': {
           position: 'relative',
           overflow: 'hidden',
-          'background-color': '#ffffffff',
+          'background-color': 'transparent',
 
           '&::after': {
             position: 'absolute',

@@ -43,7 +43,7 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
 
     useEffect(() => {
         if (autoSlice) {
-            const slideInterval = setInterval(next, autoSlideInterval + 1000);
+            const slideInterval = setInterval(next, autoSlideInterval);
             return () => clearInterval(slideInterval);
         }
     }, [])
