@@ -26,7 +26,7 @@ module.exports = {
         }
       },
       animation: {
-        'shimmer-pg': 'shimmer var(--timepg) ease-out infinite'
+        'shimmer-pg': 'shimmer var(--timepg) ease-out 1'
       }
     },
   },

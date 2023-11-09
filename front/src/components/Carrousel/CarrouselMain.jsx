@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import Carrousel from "./Carrousel";
-import ProgressBar from '../ProgressBar/ProgressBar'
+
 
 
 const images = [
@@ -16,7 +16,7 @@ const videos = [
 
 export default function CarrouselMain() {
     return (
-        <main className="w-full flex flex-col justify-center">
+        <main>
             <div className="w-full flex flex-row justify-center">
                 <Carrousel autoSlice={true} autoSlideInterval={10000}>
                     {
@@ -26,13 +26,12 @@ export default function CarrouselMain() {
                         <video key={`${videos}-V`} src={`https://i.imgur.com/${videos}.mp4`} width={1800} height={600} className="pl-8" autoPlay loop muted />
                         ]}
                 </Carrousel>
-            </div>
-            <ProgressBar color={'236, 72, 153, 1'} heightpg={'0.3rem'} time={10955} opacity={1}/>
+            </div>            
         </main>
     )
 };
 
-// TENGO QUE METER LA ANIMACION DENTRO DE CARROUSEL.                                            | NO HECHO.
+// TENGO QUE METER LA ANIMACION DENTRO DE CARROUSEL.                                            | HECHO.
 // TENGO QUE HACER CUANDO SE PRESIONE NEXT QUE REINICI CON ANIMATIONEND.                        | NO HECHO.
 // TENGO QUE HACER QUE SOLO APAREZCA LA ANIMACION SI ES TRUE LA ITERACION INFINITA.             | NO HECHO.
 // TENGO QUE HACER QUE AL TOCAR NEXT SE PARE MOMENTANEAMENTE LA ITETACION.                      | NO HECHO.
