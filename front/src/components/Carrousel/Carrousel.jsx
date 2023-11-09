@@ -20,8 +20,7 @@ const dataInfo = [
         HreF: "/"
     },
     { 
-        title: "Sixteen Mayorista3",
-        subTitle: "La Fabrica Mayorista3",
+        title: "SIXTEEN | 2023"
     }
 ] 
 
@@ -64,10 +63,10 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
                     <div className='w-6/12'></div>
                     <div className='flex flex-col mt-0 items-end p-4 rounded mb-40'>
                         <div className='bg-black/70'>
-                            <h1 className={`text-pink-500/50 text-6xl ${dataInfo[curr] ? 'p-4': ''}`}>{`${dataInfo[curr] ? dataInfo[curr].title : ''}`}</h1>
+                            <h1 className={`text-pink-500/50 text-6xl ${dataInfo[curr].title ? 'p-4': ''}`}>{`${dataInfo[curr].title ? dataInfo[curr].title : ''}`}</h1>
                         </div>
                         <div className='mb-4 bg-white/70 w-9/12 text-center'>
-                            <h1 className={`text-black/50 text-xl ${dataInfo[curr] ? 'p-4': ''}`}>{`${dataInfo[curr] ? dataInfo[curr].subTitle : ''}`}</h1>
+                            <h1 className={`text-black/50 text-xl ${dataInfo[curr].subTitle ? 'p-4': ''}`}>{`${dataInfo[curr].subTitle ? dataInfo[curr].subTitle : ''}`}</h1>
                         </div>
                         <Link href={`${dataInfo[curr] ? dataInfo[curr].HreF : '/'}`} className={`${dataInfo[curr].HreF ? 'visible': 'invisible'} px-4 py-2 text-white font-bold rounded-md transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300`}>Ver Más</Link>
                     </div>
