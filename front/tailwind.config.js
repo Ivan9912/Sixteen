@@ -17,6 +17,17 @@ module.exports = {
         'gradient-lineal':
           "linear-gradient(284deg, var(--tw-gradient-stops))"
       },
+      keyframes: {
+        shimmer: {
+          '100%': {
+            transform: 'translateX(0%)',
+            opacity: 'var(--opacitypg)'
+          }
+        }
+      },
+      animation: {
+        'shimmer-pg': 'shimmer var(--timepg) ease-out infinite'
+      }
     },
   },
   plugins: [
@@ -106,6 +117,22 @@ module.exports = {
           '&.active .toggle_menu': {
             transform: 'rotate(315deg)',
             border: '2px solid #ec48993d',
+          }
+        },
+        '.shimpg': {
+          position: 'relative',
+          overflow: 'hidden',
+          'background-color': '#ffffffff',
+
+          '&::after': {
+            position: 'absolute',
+            top: '0',
+            right: '0',
+            bottom: '0',
+            left: '0',
+            transform: 'translateX(-100%)',
+            'background-image': 'linear-gradient( 90deg, rgba(var(--clrpg)) 0, rgba(var(--clrpg)) 50%, rgba(var(--clrpg)) 100%)',
+            'border-radius': '5px'            
           }
         },
       })

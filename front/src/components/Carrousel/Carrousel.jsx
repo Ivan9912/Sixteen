@@ -16,7 +16,7 @@ const dataInfo = [
     },
     { 
         title: "Somos Distribuidores",
-        subTitle: "Fabricación y ventas mayoristas\nOrientada a la industria de la moda",
+        subTitle: "Fabricación y ventas mayoristas orientada a la industria de la moda",
         HreF: "/"
     },
     { 
