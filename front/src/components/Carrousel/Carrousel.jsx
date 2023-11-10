@@ -67,12 +67,13 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
             <div className="overflow-hidden relative flex w-full">
                 <div className='absolute bg-black w-full h-full'>
                 </div>
-                <div className="flex w-full transition-transform ease-out duration-1000" style={{ transform: `translateX(-${curr * 100}%)` }}>  {cont}
+                <div className="flex w-full transition-transform ease-out duration-1000" style={{ transform: `translateX(-${curr * 100}%)` }}>
+                    {cont}
                 </div>
-                <div className='absolute inset-0 flex items-center flex-grow w-full h-full hover:bg-black/30'>
-                    <div className=' flex items-center p-4'>
-                        <button className='p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white' onClick={prev}>
-                            <Previous size={40} />
+                <div className='absolute inset-0 flex items-center flex-grow w-full h-full lg:hover:bg-black/30'>
+                    <div className='flex items-center p-2 lg:p-4 bg-white/60 h-full lg:bg-black/0'>
+                        <button className='lg:p-1 lg:rounded-full shadow lg:bg-white/60 text-gray-800 lg:hover:bg-white' onClick={prev}>
+                            <Previous className='w-7 h-7 lg:w-10 lg:h-10' />
                         </button>
                     </div>
                     <div className='w-full h-full flex flex-row items-center justify-between'>
@@ -87,18 +88,18 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
                             <Link href={`${dataInfo[curr] ? dataInfo[curr].HreF : '/'}`} className={`${dataInfo[curr].HreF ? 'visible' : 'invisible'} px-4 py-2 text-white font-medium rounded-md transition ease-in-out delay-150 bg-pink-800 hover:-translate-y-1 hover:font-semibold hover:scale-110 hover:bg-pink-500 duration-100`}>Ver Más</Link>
                         </div>
                     </div>
-                    <div className=' flex items-center p-4'>
-                        <button className='p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white' onClick={next}>
-                            <Next size={40} />
+                    <div className='flex items-center p-2 lg:p-4 bg-white/60 h-full lg:bg-black/0'>
+                    <button className='lg:p-1 lg:rounded-full shadow lg:bg-white/60 text-gray-800 lg:hover:bg-white' onClick={prev}>
+                            <Next className='w-7 h-7 lg:w-10 lg:h-10' />
                         </button>
                     </div>
                 </div>
-                <div className='absolute bottom-4 left-0 right-0'>
+                <div className='absolute lg:bottom-4 bottom-1 left-0 right-0'>
                     <div className='flex items-center justify-center gap-0'>
                         {
                             cont.map((_, i) => {
                                 return <div
-                                    className={`transition-all w-3 h-3 ml-2 bg-white rounded-full ${curr === i ? 'p-2' : 'bg-opacity-50'}`}
+                                    className={`transition-all w-1 h-1 ml-1 lg:w-3 lg:h-3 lg:ml-2 bg-white rounded-full ${curr === i ? 'p-[0.20rem]' : 'bg-opacity-50'}`}
                                     key={`${i}-C`}
                                 />
                             })

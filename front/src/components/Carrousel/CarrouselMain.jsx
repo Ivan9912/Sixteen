@@ -22,7 +22,7 @@ export default function CarrouselMain({ widthCarrouselT, widTh, autoSlice=false,
                             [...images.map((image) => (
                                 <Image src={`https://i.imgur.com/${image}.jpg`} width={1800} height={600} key={`${image}`} alt={`${image}`} priority={true} />
                             )),
-                            <video key={`${videos}-V`} src={`https://i.imgur.com/${videos}.mp4`} width={1800} height={600} className="pl-8" autoPlay loop muted />
+                            <video key={`${videos}-V`} src={`https://i.imgur.com/${videos}.mp4`} width={1800} height={600} className="lg:pl-8" autoPlay loop muted />
                             ]}
                     </Carrousel>
                 </div>            
