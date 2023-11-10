@@ -68,10 +68,10 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
     return (
         <div className='w-full flex flex-col justify-center'>
             <div className="overflow-hidden relative flex w-full">
-                <div className='absolute  bg-black w-full h-full'>
+                <div className='absolute bg-black w-full h-full'>
                 </div>
                 <div className="flex w-full transition-transform ease-out duration-1000" style={{ transform: `translateX(-${curr * 100}%)` }}>{cont}</div>
-                <div className='absolute  inset-0 flex items-center flex-grow w-full h-full hover:bg-black/30'>
+                <div className='absolute inset-0 flex items-center flex-grow w-full h-full hover:bg-black/30'>
 
                     <div className=' flex items-center p-4'>
                         <button className='p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white' onClick={prev}>
