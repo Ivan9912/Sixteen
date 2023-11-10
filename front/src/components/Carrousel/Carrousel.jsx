@@ -71,25 +71,24 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
                     {cont}
                 </div>
                 <div className='absolute inset-0 flex items-center flex-grow w-full h-full lg:hover:bg-black/30'>
-                    <div className='flex items-center p-2 lg:p-4 bg-white/60 h-full lg:bg-black/0'>
-                        <button className='lg:p-1 lg:rounded-full shadow lg:bg-white/60 text-gray-800 lg:hover:bg-white' onClick={prev}>
+                    <div className='flex items-center p-2 lg:p-4 hover:bg-white/60 lg:hover:bg-black/0 lg:h-auto h-full lg:bg-black/0'>
+                        <button className='h-full lg:h-auto lg:p-1 lg:rounded-full shadow lg:bg-white/60 text-gray-800 lg:hover:bg-white' onClick={prev}>
                             <Previous className='w-7 h-7 lg:w-10 lg:h-10' />
                         </button>
                     </div>
-                    <div className='w-full h-full flex flex-row items-center justify-between'>
-                        <div className='w-6/12'></div>
-                        <div className='flex flex-col mt-0 items-end p-4 rounded mb-40'>
-                            <div className='bg-black/60 text-end'>
-                                <h1 className={`text-pink-500/90 text-6xl font-bold ${dataInfo[curr].title ? 'p-4' : ''}`}>{`${dataInfo[curr].title ? dataInfo[curr].title : ''}`}</h1>
+                    <div className='w-full h-full flex flex-row items-center justify-end'>
+                        <div className={`flex flex-col mt-10 lg:mt-60 h-full items-end lg:p-4 rounded ${!dataInfo[curr].subTitle && !dataInfo[curr].HreF ? 'justify-center' : 'justify-start' }`}>
+                            <div className={`text-end`}>
+                                <h1 className={`text-pink-500/90 bg-black/60 lg:text-6xl font-bold ${dataInfo[curr].title ? 'lg:p-4 p-1' : ''}`}>{`${dataInfo[curr].title ? dataInfo[curr].title : ''}`}</h1>
                             </div>
-                            <div className='mb-4 bg-white/60 w-auto text-center'>
-                                <h1 className={`text-black/90 text-xl ${dataInfo[curr].subTitle ? 'p-4' : ''}`}>{`${dataInfo[curr].subTitle ? dataInfo[curr].subTitle : ''}`}</h1>
+                            <div className='lg:mb-4 mb-1 bg-white/60 w-auto text-center'>
+                                <h1 className={`text-black/90 lg:text-xl text-[12px] ${dataInfo[curr].subTitle ? 'lg:p-4 p-1' : ''}`}>{`${dataInfo[curr].subTitle ? dataInfo[curr].subTitle : ''}`}</h1>
                             </div>
-                            <Link href={`${dataInfo[curr] ? dataInfo[curr].HreF : '/'}`} className={`${dataInfo[curr].HreF ? 'visible' : 'invisible'} px-4 py-2 text-white font-medium rounded-md transition ease-in-out delay-150 bg-pink-800 hover:-translate-y-1 hover:font-semibold hover:scale-110 hover:bg-pink-500 duration-100`}>Ver Más</Link>
+                            <Link href={`${dataInfo[curr] ? dataInfo[curr].HreF : '/'}`} className={`${dataInfo[curr].HreF ? 'visible' : 'invisible'} lg:px-4 lg:py-2 text-[10px] lg:text-[12px] py-1 px-2 text-white lg:font-medium rounded-md transition ease-in-out delay-150 bg-pink-800 hover:-translate-y-1 lg:hover:font-semibold hover:scale-110 hover:bg-pink-500 duration-100`}>Ver Más</Link>
                         </div>
                     </div>
-                    <div className='flex items-center p-2 lg:p-4 bg-white/60 h-full lg:bg-black/0'>
-                    <button className='lg:p-1 lg:rounded-full shadow lg:bg-white/60 text-gray-800 lg:hover:bg-white' onClick={prev}>
+                    <div className='flex items-center p-2 lg:p-4 hover:bg-white/60 lg:hover:bg-black/0 lg:h-auto h-full lg:bg-black/0'>
+                        <button className='h-full lg:h-auto lg:p-1 lg:rounded-full shadow lg:bg-white/60 text-gray-800 lg:hover:bg-white' onClick={next}>
                             <Next className='w-7 h-7 lg:w-10 lg:h-10' />
                         </button>
                     </div>

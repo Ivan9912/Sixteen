@@ -11,7 +11,7 @@ export default function Home() {
                     <span>Sixteen</span>
                 </span>
             </blockquote>
-            <CarrouselMain widthCarrouselT={'w-11/12'} autoSlice={true} autoSlideInterval={10000} colorpg={'236, 72, 153'} heightpg={'0.3rem'} opacitypg={1}/>       
+            <CarrouselMain widthCarrouselT={'w-11/12'} autoSlice={false} autoSlideInterval={10000} colorpg={'236, 72, 153'} heightpg={'0.3rem'} opacitypg={1}/>       
             <div className=" grid grid-cols-2 lg:grid-cols-4 h-12/12 w-screen justify-items-center m-10 bg-black/5 [&>div]:my-10 ">
                 <div className="lg:h-80 lg:w-72 h-52 w-44 bg-slate-50 rounded border border-pink-400 flex flex-col justify-start items-center">
                     <div className="h-32 flex items-center my-4">
