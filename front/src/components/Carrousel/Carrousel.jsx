@@ -75,7 +75,6 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
                 </div>
                 <div className="flex w-full transition-transform ease-out duration-1000" style={{ transform: `translateX(-${curr * 100}%)` }}>{cont}</div>
                 <div className='absolute inset-0 flex items-center flex-grow w-full h-full hover:bg-black/30'>
-
                     <div className=' flex items-center p-4'>
                         <button className='p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white' onClick={prev}>
                             <Previous size={40} />
