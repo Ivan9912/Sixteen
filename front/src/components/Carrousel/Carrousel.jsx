@@ -1,8 +1,8 @@
 "use client"
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import Next from '../../../public/img_svg/form-next';
 import Previous from '../../../public/img_svg/form-previous';
-import Link from 'next/link';
 import ProgressBar from '../ProgressBar/ProgressBar';
 
 const dataInfo = [
@@ -26,7 +26,7 @@ const dataInfo = [
     }
 ]
 
-export default function Carrousel({ children: cont, autoSlice = false, autoSlideInterval = 3000, colorpg='255, 255, 255', heightpg='1rem', opacitypg=1 }) {
+export default function Carrousel({ children: cont, autoSlice = false, autoSlideInterval = 3000, colorpg = '0, 255, 0', heightpg = '1rem', opacitypg = 1 }) {
 
     const [curr, setCurr] = useState(0);
 
