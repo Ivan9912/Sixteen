@@ -11,9 +11,7 @@ export default function Home() {
                     <span>Sixteen</span>
                 </span>
             </blockquote>
-            <div className="relative w-11/12 flex items-center">
-                <CarrouselMain />
-            </div>
+            <CarrouselMain widthCarrouselT={'w-11/12'} autoSlice={true} autoSlideInterval={10000} colorpg={'236, 72, 153'} heightpg={'0.3rem'} opacitypg={1}/>           
         </main>
     )
 };

@@ -59,7 +59,10 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
     }
 
     useEffect(() => {
+        const shimpgElement = document.querySelector('.animpg');
         if (autoSlice) {
+            shimpgElement.classList.add('shimpg');
+            shimpgElement.classList.add('after:animate-shimmer-pg');
             const slideInterval = setInterval(nextAutomatic, autoSlideInterval);
             return () => { clearInterval(slideInterval); }
         }
