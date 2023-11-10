@@ -26,7 +26,7 @@ const dataInfo = [
     }
 ]
 
-export default function Carrousel({ children: cont, autoSlice = false, autoSlideInterval = 3000 }) {
+export default function Carrousel({ children: cont, autoSlice = false, autoSlideInterval = 3000, colorpg='255, 255, 255', heightpg='1rem', opacitypg=1 }) {
 
     const [curr, setCurr] = useState(0);
 
@@ -67,7 +67,6 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
 
     return (
         <div className='w-full flex flex-col justify-center'>
-
             <div className="overflow-hidden relative flex w-full">
                 <div className='absolute  bg-black w-full h-full'>
                 </div>
@@ -110,7 +109,7 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
                     </div>
                 </div>
             </div>
-            <ProgressBar color={'236, 72, 153, 1'} heightpg={'0.3rem'} time={10950} opacity={1} />
+            <ProgressBar color={colorpg} heightpg={heightpg} time={autoSlideInterval} opacity={opacitypg} />
         </div>
     )
 };

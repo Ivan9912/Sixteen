@@ -1,6 +1,6 @@
 "use client"
 
-export default function Prueba ({color='255, 255, 255, 1', heightpg='1rem', time=1, opacity=1 }) {
+export default function ProgressBar ({color, heightpg, time, opacity }) {
     return (
         <div className='flex flex-col space-y-3'>
             <div className='relative w-12/12'>

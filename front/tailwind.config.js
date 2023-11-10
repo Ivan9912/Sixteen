@@ -131,7 +131,7 @@ module.exports = {
             bottom: '0',
             left: '0',
             transform: 'translateX(-100%)',
-            'background-image': 'linear-gradient( 90deg, rgba(var(--clrpg)) 0, rgba(var(--clrpg)) 50%, rgba(var(--clrpg)) 100%)',
+            'background-image': 'linear-gradient( 90deg, rgba(var(--clrpg), .3) 0, rgba(var(--clrpg), .5) 50%, rgba(var(--clrpg), 1) 100%)',
             'border-radius': '5px'            
           }
         },
