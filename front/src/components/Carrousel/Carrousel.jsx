@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Next from '../../../public/img_svg/form-next';
 import Previous from '../../../public/img_svg/form-previous';
 import ProgressBar from '../ProgressBar/ProgressBar';
+import { Animation } from './logic.js';
 
 const dataInfo = [
     {
@@ -49,14 +50,7 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
         })
     };
 
-    const Animation = () => {
-        const shimpgElement = document.querySelector('.animpg');
-        shimpgElement.classList.remove('shimpg');
-        shimpgElement.classList.remove('after:animate-shimmer-pg');
-        void shimpgElement.offsetWidth; // Este paso fuerza un reflow, reiniciando la animación
-        shimpgElement.classList.add('shimpg');
-        shimpgElement.classList.add('after:animate-shimmer-pg');
-    }
+
 
     useEffect(() => {
         const shimpgElement = document.querySelector('.animpg');
@@ -73,7 +67,8 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
             <div className="overflow-hidden relative flex w-full">
                 <div className='absolute bg-black w-full h-full'>
                 </div>
-                <div className="flex w-full transition-transform ease-out duration-1000" style={{ transform: `translateX(-${curr * 100}%)` }}>{cont}</div>
+                <div className="flex w-full transition-transform ease-out duration-1000" style={{ transform: `translateX(-${curr * 100}%)` }}>  {cont}
+                </div>
                 <div className='absolute inset-0 flex items-center flex-grow w-full h-full hover:bg-black/30'>
                     <div className=' flex items-center p-4'>
                         <button className='p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white' onClick={prev}>
