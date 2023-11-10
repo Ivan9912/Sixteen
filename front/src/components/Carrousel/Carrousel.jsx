@@ -77,7 +77,7 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
                         </button>
                     </div>
                     <div className='w-full h-full flex flex-row items-center justify-end'>
-                        <div className={`flex flex-col mt-10 lg:mt-60 h-full items-end lg:p-4 rounded ${!dataInfo[curr].subTitle && !dataInfo[curr].HreF ? 'justify-center' : 'justify-start' }`}>
+                        <div className={`flex flex-col h-full items-end lg:p-4 rounded ${!dataInfo[curr].subTitle && !dataInfo[curr].HreF ? 'justify-center' : 'justify-start mt-10 lg:mt-60' }`}>
                             <div className={`text-end bg-black/60`}>
                                 <h1 className={` lg:text-6xl font-bold ${dataInfo[curr].title ? 'lg:p-4 p-1' : ''} bg-black/60 text-transparent bg-clip-text bg-gradient-to-r from-pink-800 to-pink-200`}>{`${dataInfo[curr].title ? dataInfo[curr].title : ''}`}</h1>
                             </div>
