@@ -1,6 +1,7 @@
 import CarrouselMain from "@/components/Carrousel/CarrouselMain";
 import { metadata } from "../layout";
 import Image from "next/image";
+import Link from "next/link";
 metadata.title = 'Sixteen | Home';
 
 export default function Home() {
@@ -73,45 +74,31 @@ export default function Home() {
             </div>
             {/* ------------------------Desde aca estan las cards de categorias de los 3 ------------------------------------------*/}
             <div div className=" grid grid-cols-1 lg:grid-cols-3 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5 2xl:px-80 lg:px-16">
-                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-slate-50 rounded border border-black/50 flex flex-col justify-start items-center">
-                    <div className="h-10/12 flex items-center mb-4">
-                        <div className="flex justify-center items-center">
-                            <div className="lg:h-64 lg:w-72 h-44 w-64 bg-pink-600">
-
-                            </div>
-                            <Image className={`absolute w-8 h-8 lg:w-20 lg:h-20 invert`} alt={"shop"} src={'https://i.imgur.com/hp3LhM4.png'} width={80} height={80} />
-                        </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded border border-black/50 flex flex-col items-center">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative">
+                        <Image alt={"01"} src={'https://i.imgur.com/IglFLkP.png'} layout="cover" width={286} height={286} />
                     </div>
-                    <div className="h-2/12 px-4 pb-4 text-center">
-                        <h1 className="text-xs font-semibold lg:text-sm lg:font-bold mb-1">REALIZÁ TÚ PEDIDO</h1>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>VESTIDO DE MORLEY RAYADO</Link>
                     </div>
                 </div>
-                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-slate-50 rounded border border-black/50 flex flex-col justify-start items-center">
-                    <div className="h-10/12 flex items-center mb-4">
-                        <div className="flex justify-center items-center">
-                            <div className="lg:h-64 lg:w-72 h-44 w-64 bg-pink-600">
-
-                            </div>
-                            <Image className={`absolute w-8 h-8 lg:w-20 lg:h-20 invert`} alt={"shop"} src={'https://i.imgur.com/hp3LhM4.png'} width={80} height={80} />
-                        </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded border border-black/50 flex flex-col items-center">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative">
+                        <Image alt={"01"} src={'https://i.imgur.com/mrOkLUB.png'} layout="cover" width={286} height={286} />
                     </div>
-                    <div className="h-2/12 px-4 pb-4 text-center">
-                        <h1 className="text-xs font-semibold lg:text-sm lg:font-bold mb-1">REALIZÁ TÚ PEDIDO</h1>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>VESTIDO RAYADO CON TAJO</Link>
                     </div>
                 </div>
-                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-slate-50 rounded border border-black/50 flex flex-col justify-start items-center">
-                    <div className="h-10/12 flex items-center mb-4">
-                        <div className="flex justify-center items-center">
-                            <div className="lg:h-64 lg:w-72 h-44 w-64 bg-pink-600">
-
-                            </div>
-                            <Image className={`absolute w-8 h-8 lg:w-20 lg:h-20 invert`} alt={"shop"} src={'https://i.imgur.com/hp3LhM4.png'} width={80} height={80} />
-                        </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded border border-black/50 flex flex-col items-center">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative">
+                        <Image alt={"01"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} />
                     </div>
-                    <div className="h-2/12 px-4 pb-4 text-center">
-                        <h1 className="text-xs font-semibold lg:text-sm lg:font-bold mb-1">REALIZÁ TÚ PEDIDO</h1>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
                     </div>
                 </div>
+
             </div>
             <div>
                 <h1 className="text-[3rem]">PRODUCTOS DESTACADOS</h1>
