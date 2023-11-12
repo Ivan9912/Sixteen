@@ -13,7 +13,7 @@ export default function Home() {
                 </span>
             </blockquote>
             <CarrouselMain widthCarrouselT={'w-11/12'} autoSlice={true} autoSlideInterval={10000} colorpg={'236, 72, 153'} heightpg={'0.3rem'} opacitypg={1} />
-            <div className=" grid grid-cols-2 lg:grid-cols-4 h-12/12 w-screen justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5">
+            <div className=" grid grid-cols-2 lg:grid-cols-4 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5">
                 <div className="lg:h-80 lg:w-72 h-52 w-44 bg-slate-50 rounded border border-pink-400 flex flex-col justify-start items-center">
                     <div className="h-32 flex items-center my-4">
                         <div className="flex justify-center items-center">
@@ -70,6 +70,51 @@ export default function Home() {
                         <span className="text-[8px] lg:text-xs/4">LOS ENVIOS SON martes y viernes por Oca, viacargo y correo argentino. transportes y motos se coordina por whatsaap</span>
                     </div>
                 </div>
+            </div>
+            {/* ------------------------Desde aca estan las cards de categorias de los 3 ------------------------------------------*/}
+            <div div className=" grid grid-cols-1 lg:grid-cols-3 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5 2xl:px-80 lg:px-16">
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-slate-50 rounded border border-black/50 flex flex-col justify-start items-center">
+                    <div className="h-10/12 flex items-center mb-4">
+                        <div className="flex justify-center items-center">
+                            <div className="lg:h-64 lg:w-72 h-44 w-64 bg-pink-600">
+
+                            </div>
+                            <Image className={`absolute w-8 h-8 lg:w-20 lg:h-20 invert`} alt={"shop"} src={'https://i.imgur.com/hp3LhM4.png'} width={80} height={80} />
+                        </div>
+                    </div>
+                    <div className="h-2/12 px-4 pb-4 text-center">
+                        <h1 className="text-xs font-semibold lg:text-sm lg:font-bold mb-1">REALIZÁ TÚ PEDIDO</h1>
+                    </div>
+                </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-slate-50 rounded border border-black/50 flex flex-col justify-start items-center">
+                    <div className="h-10/12 flex items-center mb-4">
+                        <div className="flex justify-center items-center">
+                            <div className="lg:h-64 lg:w-72 h-44 w-64 bg-pink-600">
+
+                            </div>
+                            <Image className={`absolute w-8 h-8 lg:w-20 lg:h-20 invert`} alt={"shop"} src={'https://i.imgur.com/hp3LhM4.png'} width={80} height={80} />
+                        </div>
+                    </div>
+                    <div className="h-2/12 px-4 pb-4 text-center">
+                        <h1 className="text-xs font-semibold lg:text-sm lg:font-bold mb-1">REALIZÁ TÚ PEDIDO</h1>
+                    </div>
+                </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-slate-50 rounded border border-black/50 flex flex-col justify-start items-center">
+                    <div className="h-10/12 flex items-center mb-4">
+                        <div className="flex justify-center items-center">
+                            <div className="lg:h-64 lg:w-72 h-44 w-64 bg-pink-600">
+
+                            </div>
+                            <Image className={`absolute w-8 h-8 lg:w-20 lg:h-20 invert`} alt={"shop"} src={'https://i.imgur.com/hp3LhM4.png'} width={80} height={80} />
+                        </div>
+                    </div>
+                    <div className="h-2/12 px-4 pb-4 text-center">
+                        <h1 className="text-xs font-semibold lg:text-sm lg:font-bold mb-1">REALIZÁ TÚ PEDIDO</h1>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 className="text-[3rem]">PRODUCTOS DESTACADOS</h1>
             </div>
         </main>
     )
