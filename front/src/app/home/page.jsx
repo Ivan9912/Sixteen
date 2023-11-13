@@ -54,28 +54,28 @@ export default function Home() {
             </div>
             {/* ------------------------Desde aca estan las cards de categorias de los 3 ------------------------------------------*/}
             <div div className="grid grid-cols-1 lg:grid-cols-3 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5 2xl:px-80 lg:px-16">
-                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
-                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative">
-                        <Image alt={"01"} src={'https://i.imgur.com/IglFLkP.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                <div className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="flex justify-center relative">
+                        <Image alt={"01"} src={'https://i.imgur.com/IglFLkP.png'} cover  width={286} height={286} className="rounded-t-lg" />
                     </div>
                     <div className="h-full w-full flex justify-center">
-                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>VESTIDO DE MORLEY RAYADO</Link>
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block" href={'/'}>VESTIDO DE MORLEY RAYADO</Link>
                     </div>
                 </div>
-                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
-                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative">
-                        <Image alt={"02"} src={'https://i.imgur.com/mrOkLUB.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                <div className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="flex justify-center relative">
+                        <Image alt={"02"} src={'https://i.imgur.com/mrOkLUB.png'} cover  width={286} height={286} className="rounded-t-lg" />
                     </div>
                     <div className="h-full w-full flex justify-center">
-                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>VESTIDO RAYADO CON TAJO</Link>
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block" href={'/'}>VESTIDO RAYADO CON TAJO</Link>
                     </div>
                 </div>
-                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
-                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center">
-                        <Image alt={"03"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                <div className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="flex justify-center relative bg-center">
+                        <Image alt={"03"} src={'https://i.imgur.com/SpPNf9T.png'} cover  width={286} height={286} className="rounded-t-lg" />
                     </div>
                     <div className="h-full w-full flex justify-center">
-                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block" href={'/'}>LONAS</Link>
                     </div>
                 </div>
             </div>
@@ -86,37 +86,37 @@ export default function Home() {
             </div>
             {/* De Aca va lo Descatacado!. */}
             <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>a]:my-10 [&>a]:my-5 2xl:px-40 lg:px-44 mb-10">
-                <Link className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"01AB"} src={'https://i.imgur.com/WkXoGvN.png'} layout="cover" width={286} height={286} className="rounded-t-lg lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center" />
-                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block">RS.FEARLESS</span>
+                <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
+                    <Image alt={"01AB"} src={'https://i.imgur.com/WkXoGvN.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RS.FEARLESS</span>
                 </Link>
-                <Link className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"02AB"} src={'https://i.imgur.com/PbwNjFr.png'} layout="cover" width={286} height={286} className="rounded-t-lg lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center" />
-                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block">RO.ONLY FLANS BLANCO</span>
+                <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
+                    <Image alt={"02AB"} src={'https://i.imgur.com/PbwNjFr.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RO.ONLY FLANS BLANCO</span>
                 </Link>
-                <Link className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"03AB"} src={'https://i.imgur.com/TBl3TOy.png'} layout="cover" width={286} height={286} className="rounded-t-lg lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center" />
-                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block">RS.BAD BUNNY</span>
+                <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
+                    <Image alt={"03AB"} src={'https://i.imgur.com/TBl3TOy.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RS.BAD BUNNY</span>
                 </Link>
-                <Link className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"04AB"} src={'https://i.imgur.com/Z20PcfM.png'} layout="cover" width={286} height={286} className="rounded-t-lg lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center" />
-                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block">RO.ONLY FLANS NEGRO</span>
+                <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
+                    <Image alt={"04AB"} src={'https://i.imgur.com/Z20PcfM.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RO.ONLY FLANS NEGRO</span>
                 </Link>
-                <Link className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"05AB"} src={'https://i.imgur.com/WkXoGvN.png'} layout="cover" width={286} height={286} className="rounded-t-lg lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center" />
-                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block">RS.FEARLESS</span>
+                <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
+                    <Image alt={"05AB"} src={'https://i.imgur.com/WkXoGvN.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RS.FEARLESS</span>
                 </Link>
-                <Link className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"06AB"} src={'https://i.imgur.com/PbwNjFr.png'} layout="cover" width={286} height={286} className="rounded-t-lg lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center" />
-                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block">RO.ONLY FLANS BLANCO</span>
+                <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
+                    <Image alt={"06AB"} src={'https://i.imgur.com/PbwNjFr.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RO.ONLY FLANS BLANCO</span>
                 </Link>
-                <Link className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"07AB"} src={'https://i.imgur.com/TBl3TOy.png'} layout="cover" width={286} height={286} className="rounded-t-lg lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center" />
-                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block">RS.BAD BUNNY</span>
+                <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
+                    <Image alt={"07AB"} src={'https://i.imgur.com/TBl3TOy.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RS.BAD BUNNY</span>
                 </Link>
-                <Link className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"08AB"} src={'https://i.imgur.com/Z20PcfM.png'} layout="cover" width={286} height={286} className="rounded-t-lg lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center" />
-                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block">RO.ONLY FLANS NEGRO</span>
+                <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
+                    <Image alt={"04AB"} src={'https://i.imgur.com/Z20PcfM.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RO.ONLY FLANS NEGRO</span>
                 </Link>
             </div>
         </main>
