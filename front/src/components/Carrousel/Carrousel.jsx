@@ -27,7 +27,7 @@ const dataInfo = [
     }
 ]
 
-export default function Carrousel({ children: cont, autoSlice = false, autoSlideInterval = 3000, colorpg = '0, 255, 0', heightpg = '1rem', opacitypg = 1 }) {
+export default function Carrousel({ children: cont, $autoSlice = true, autoSlideInterval = 3000, colorpg = '0, 255, 0', heightpg = '1rem', opacitypg = 1 }) {
 
     const [curr, setCurr] = useState(0);
 
@@ -46,13 +46,18 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
 
     useEffect(() => {
         const shimpgElement = document.querySelector('.animpg');
-        if (autoSlice) {
+        const handleAutoSlice = () => {
             shimpgElement.classList.add('shimpg');
             shimpgElement.classList.add('after:animate-shimmer-pg');
             const slideInterval = setInterval(next, autoSlideInterval);
-            return () => clearInterval(slideInterval)
+    
+            return () => clearInterval(slideInterval);
+        };
+    
+        if ($autoSlice) {
+            return handleAutoSlice();
         }
-    }, [autoSlice, autoSlideInterval, next]);
+    }, [$autoSlice, autoSlideInterval, next]);
 
     return (
         <div className='w-full flex flex-col justify-center'>
@@ -69,9 +74,9 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
                         </button>
                     </div>
                     <div className='w-full h-full flex flex-row items-center justify-end'>
-                        <div className={`flex flex-col h-full items-end lg:p-4 rounded ${!dataInfo[curr].subTitle && !dataInfo[curr].HreF ? 'justify-center' : 'justify-start mt-10 lg:mt-60' }`}>
+                        <div className={`flex flex-col h-full items-end lg:p-4 rounded ${!dataInfo[curr].subTitle && !dataInfo[curr].HreF ? 'justify-center nth-1:bg-black/0' : 'justify-start mt-10 lg:mt-60' }`}>
                             <div className={`text-end bg-black/60`}>
-                                <h1 className={` lg:text-6xl font-bold ${dataInfo[curr].title ? 'lg:p-4 p-1' : ''} bg-black/60 text-transparent bg-clip-text bg-gradient-to-r from-pink-800 to-pink-200`}>{`${dataInfo[curr].title ? dataInfo[curr].title : ''}`}</h1>
+                                <h1 className={` lg:text-6xl font-bold ${dataInfo[curr].title ? 'lg:p-4 p-1' : ''} text-transparent bg-clip-text bg-gradient-to-r from-pink-800 to-pink-200`}>{`${dataInfo[curr].title ? dataInfo[curr].title : ''}`}</h1>
                             </div>
                             <div className='lg:mb-4 mb-1 bg-white/60 w-auto text-center'>
                                 <h1 className={`text-black/90 lg:text-xl text-[12px] ${dataInfo[curr].subTitle ? 'lg:p-4 p-1' : ''}`}>{`${dataInfo[curr].subTitle ? dataInfo[curr].subTitle : ''}`}</h1>

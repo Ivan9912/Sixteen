@@ -2,7 +2,38 @@ import CarrouselMain from "@/components/Carrousel/CarrouselMain";
 import { metadata } from "../layout";
 import Image from "next/image";
 import Link from "next/link";
+import CardInfo from "@/components/Cards/CardInfo";
 metadata.title = 'Sixteen | Home';
+
+const cardInfo = [
+
+    {
+        title: `REALIZÁ TÚ PEDIDO:`,
+        description:`Elegí lo que te guste y agregalo al carrito de compra, recuerda que el mínimo de compra es: $<b>10000</b>.`,
+        aLt:`Shop`,
+        URL:`https://i.imgur.com/hp3LhM4.png`
+    },
+    {
+        title:`ENVIÁ TÚ PEDIDO:`,
+        description:`Una vez agregado tu pedido al carrito de compra, dale click a “enviar pedido”, nos comunicaremos por whatsaap en 24 hs hábiles.`,
+        aLt:`WPP`,
+        URL:`https://i.imgur.com/0eqocWR.png`
+    },
+    
+    {
+        title:`REALIZÁ EL PAGO:`,
+        description:`Tenes para abonar hasta 48 horas hábiles por deposito o transferencia bancaria y efectivo únicamente para retiros por el deposito.`,
+        aLt:`Card`,
+        URL:`https://i.imgur.com/0kXtFrS.png`
+    },
+    
+    {
+        title:`DESPACHOS:`,
+        description:`LOS ENVIOS SON martes y viernes por Oca, viacargo y correo argentino. transportes y motos se coordina por whatsaap`,
+        aLt:`Drop`,
+        URL:`https://i.imgur.com/yBRNOco.png`
+    },
+];
 
 export default function Home() {
     return (
@@ -13,65 +44,9 @@ export default function Home() {
                     <span>Sixteen</span>
                 </span>
             </blockquote>
-            <CarrouselMain widthCarrouselT={'w-11/12'} autoSlice={true} autoSlideInterval={10000} colorpg={'236, 72, 153'} heightpg={'0.3rem'} opacitypg={1} />
-            <div className=" grid grid-cols-2 lg:grid-cols-4 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5">
-                <div className="lg:h-80 lg:w-72 h-52 w-44 bg-slate-50 rounded border border-pink-400 flex flex-col justify-start items-center">
-                    <div className="h-32 flex items-center my-4">
-                        <div className="flex justify-center items-center">
-                            <div className="rounded-full lg:h-28 lg:w-28 h-14 w-14 bg-pink-600">
-
-                            </div>
-                            <Image className={`absolute w-8 h-8 lg:w-20 lg:h-20 invert`} alt={"shop"} src={'https://i.imgur.com/hp3LhM4.png'} width={80} height={80} />
-                        </div>
-                    </div>
-                    <div className="h-6/12 px-4 pb-4 text-center">
-                        <h1 className="text-xs font-semibold lg:text-sm lg:font-bold mb-1">REALIZÁ TÚ PEDIDO:</h1>
-                        <span className="text-[8px] lg:text-xs/4">Elegí lo que te guste y agregalo al carrito de compra, recuerda que el mínimo de compra es: $<b>10000</b>.</span>
-                    </div>
-                </div>
-                <div className="lg:h-80 lg:w-72 h-52 w-44 bg-slate-50 rounded border border-pink-400 flex flex-col justify-start items-center">
-                    <div className="h-32 flex items-center my-4">
-                        <div className="flex justify-center items-center">
-                            <div className="rounded-full lg:h-28 lg:w-28 h-14 w-14 bg-pink-600">
-
-                            </div>
-                            <Image className={`absolute w-8 h-8 lg:w-20 lg:h-20 invert`} alt={"wpp"} src={'https://i.imgur.com/0eqocWR.png'} width={80} height={80} />
-                        </div>
-                    </div>
-                    <div className="h-6/12 px-4 pb-4 text-center">
-                        <h1 className="text-xs font-semibold lg:text-sm lg:font-bold mb-1">ENVIA TU PEDIDO</h1>
-                        <span className="text-[8px] lg:text-xs/4">Una vez agregado tu pedido al carrito de compra, dale click a “enviar pedido”, nos comunicaremos por whatsaap en 24 hs hábiles.</span>
-                    </div>
-                </div>
-                <div className="lg:h-80 lg:w-72 h-52 w-44 bg-slate-50 rounded border border-pink-400 flex flex-col justify-start items-center">
-                    <div className="h-32 flex items-center my-4">
-                        <div className="flex justify-center items-center">
-                            <div className="rounded-full lg:h-28 lg:w-28 h-14 w-14 bg-pink-600">
-
-                            </div>
-                            <Image className={`absolute w-8 h-8 lg:w-20 lg:h-20 invert`} alt={"card"} src={'https://i.imgur.com/0kXtFrS.png'} width={80} height={80} />
-                        </div>
-                    </div>
-                    <div className="h-6/12 px-4 pb-4 text-center">
-                        <h1 className="text-xs font-semibold lg:text-sm lg:font-bold mb-1">REALIZA EL PAGO</h1>
-                        <span className="text-[8px] lg:text-xs/4">Tenes para abonar hasta 48 horas hábiles por deposito o transferencia bancaria y efectivo únicamente para retiros por el deposito.</span>
-                    </div>
-                </div>
-                <div className="lg:h-80 lg:w-72 h-52 w-44 bg-slate-50 rounded border border-pink-400 flex flex-col justify-start items-center">
-                    <div className="h-32 flex items-center my-4">
-                        <div className="flex justify-center items-center">
-                            <div className="rounded-full lg:h-28 lg:w-28 h-14 w-14 bg-pink-600">
-
-                            </div>
-                            <Image className={`absolute w-8 h-8 lg:w-20 lg:h-20 invert`} alt={"card"} src={'https://i.imgur.com/yBRNOco.png'} width={80} height={80} />
-                        </div>
-                    </div>
-                    <div className="h-6/12 px-4 pb-4 text-center">
-                        <h1 className="text-xs font-semibold lg:text-sm lg:font-bold mb-1">DESPACHOS</h1>
-                        <span className="text-[8px] lg:text-xs/4">LOS ENVIOS SON martes y viernes por Oca, viacargo y correo argentino. transportes y motos se coordina por whatsaap</span>
-                    </div>
-                </div>
-            </div>
+            <CarrouselMain widthCarrouselT={'w-11/12'} $autoSlice autoSlideInterval={10000} colorpg={'236, 72, 153'} heightpg={'0.3rem'} opacitypg={1} />
+            
+            <CardInfo informations={cardInfo}/>
             <div className="w-full h-full flex flex-row items-center">
                 <div className="2xl:h-2 h-[4px] w-4/12 bg-pink-900" />
                 <span className="lg:text-[1.5rem] text-sm font-bold 2xl:text-4xl my-4 w-4/12 text-center border border-x-4 2xl:border-x-8 border-x-pink-900 text-pink-900">RECOMENDACIONES</span>
