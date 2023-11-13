@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="2xl:h-2 h-[4px] bg-pink-900 w-4/12" />
             </div>
             {/* De Aca va lo Descatacado!. */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>a]:my-10 [&>a]:my-5 2xl:px-40 lg:px-44">
+            <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>a]:my-10 [&>a]:my-5 2xl:px-40 lg:px-44 mb-10">
                 <Link className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
                     <Image alt={"01AB"} src={'https://i.imgur.com/WkXoGvN.png'} layout="cover" width={286} height={286} className="rounded-t-lg lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center" />
                     <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block">RS.FEARLESS</span>
