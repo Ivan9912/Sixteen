@@ -38,29 +38,21 @@ export default function Carrousel({ children: cont, autoSlice = false, autoSlide
     };
 
     const next = () => {
-        setCurr((c) => {
-            return c === cont.length - 1 ? 0 : c + 1;
-        })
-    };
-
-    const nextAutomatic = () => {
         Animation();
         setCurr((c) => {
             return c === cont.length - 1 ? 0 : c + 1;
         })
     };
 
-
-
     useEffect(() => {
         const shimpgElement = document.querySelector('.animpg');
         if (autoSlice) {
             shimpgElement.classList.add('shimpg');
             shimpgElement.classList.add('after:animate-shimmer-pg');
-            const slideInterval = setInterval(nextAutomatic, autoSlideInterval);
+            const slideInterval = setInterval(next, autoSlideInterval);
             return () => { clearInterval(slideInterval); }
         }
-    }, []);
+    }, [autoSlice, autoSlideInterval, next]);
 
     return (
         <div className='w-full flex flex-col justify-center'>
