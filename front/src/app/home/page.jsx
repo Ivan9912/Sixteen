@@ -73,10 +73,10 @@ export default function Home() {
                 </div>
             </div>
             {/* ------------------------Desde aca estan las cards de categorias de los 3 ------------------------------------------*/}
-            <div div className=" grid grid-cols-1 lg:grid-cols-3 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5 2xl:px-80 lg:px-16">
+            <div div className="grid grid-cols-1 lg:grid-cols-3 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5 2xl:px-80 lg:px-16">
                 <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
                     <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative">
-                        <Image alt={"01"} src={'https://i.imgur.com/IglFLkP.png'} layout="cover" width={286} height={286} className="rounded-t-lg"/>
+                        <Image alt={"01"} src={'https://i.imgur.com/IglFLkP.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
                     </div>
                     <div className="h-full w-full flex justify-center">
                         <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>VESTIDO DE MORLEY RAYADO</Link>
@@ -84,7 +84,7 @@ export default function Home() {
                 </div>
                 <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
                     <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative">
-                        <Image alt={"01"} src={'https://i.imgur.com/mrOkLUB.png'} layout="cover" width={286} height={286} className="rounded-t-lg"/>
+                        <Image alt={"02"} src={'https://i.imgur.com/mrOkLUB.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
                     </div>
                     <div className="h-full w-full flex justify-center">
                         <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>VESTIDO RAYADO CON TAJO</Link>
@@ -92,7 +92,7 @@ export default function Home() {
                 </div>
                 <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
                     <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center">
-                        <Image alt={"01"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg"/>
+                        <Image alt={"03"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
                     </div>
                     <div className="h-full w-full flex justify-center">
                         <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
@@ -101,6 +101,73 @@ export default function Home() {
             </div>
             <div>
                 <h1 className="lg:text-[3rem] text-lg my-4">PRODUCTOS DESTACADOS</h1>
+            </div>
+            {/* De Aca va lo Descatacado!. */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5 2xl:px-40 lg:px-44">
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center">
+                        <Image alt={"01AB"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                    </div>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
+                    </div>
+                </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center">
+                        <Image alt={"02AB"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                    </div>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
+                    </div>
+                </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center">
+                        <Image alt={"03AB"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                    </div>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
+                    </div>
+                </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center">
+                        <Image alt={"04AB"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                    </div>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
+                    </div>
+                </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center">
+                        <Image alt={"05AB"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                    </div>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
+                    </div>
+                </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center">
+                        <Image alt={"06AB"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                    </div>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
+                    </div>
+                </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center">
+                        <Image alt={"07AB"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                    </div>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
+                    </div>
+                </div>
+                <div className="lg:h-80 lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
+                    <div className="lg:h-64 lg:w-72 h-44 w-64 flex justify-center relative bg-center">
+                        <Image alt={"08AB"} src={'https://i.imgur.com/SpPNf9T.png'} layout="cover" width={286} height={286} className="rounded-t-lg" />
+                    </div>
+                    <div className="h-full w-full flex justify-center">
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-5 inline-block" href={'/'}>LONAS</Link>
+                    </div>
+                </div>
             </div>
         </main>
     )
