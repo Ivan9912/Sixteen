@@ -1,10 +1,10 @@
 import CarrouselMain from "@/components/Carrousel/CarrouselMain";
 import { metadata } from "../layout";
-import Image from "next/image";
-import Link from "next/link";
 import CardInfo from "@/components/Cards/CardInfo";
 import CardRecomemnd from "@/components/Cards/CardRecommend";
 import CardTop from "@/components/Cards/CardTop";
+import HrPersonality from "@/components/Utilities/HrPersonality";
+import TitleLogo from "@/components/Utilities/TitleLogo";
 metadata.title = 'Sixteen | Home';
 
 const cardInfo = {
@@ -112,23 +112,12 @@ const cardInfo = {
 export default function Home() {
     return (
         <main className="flex text-black flex-col items-center justify-center h-full select-none mt-16 lg:mt-28">
-            <blockquote className="lg:text-2xl font-semibold italic text-center text-slate-900 my-8 z-[2]">
-                Bienvenidos a&nbsp;&nbsp;&nbsp;
-                <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:z-0 before:bg-pink-500 duration-500 hover:before:bg-[#f5f5f5] relative inline-block [&_span]:relative [&_span]:text-[#f5f5f5] [&:hover_span]:text-pink-500 [&:hover_span]:underline [&:hover_span]:underline-offset-4 [&_span]:duration-500 [&_span]:italic [&_span]:lg:text-xl [&_span]:z-[1]">
-                    <span>Sixteen</span>
-                </span>
-            </blockquote>
+            <TitleLogo component={'body'} />
             <CarrouselMain widthCarrouselT={'w-11/12'} $autoSlice autoSlideInterval={10000} colorpg={'236, 72, 153'} heightpg={'0.3rem'} opacitypg={1} />
-
             <CardInfo informations={cardInfo.Info} />
-            <div className="w-full h-full flex flex-row items-center">
-                <div className="2xl:h-2 h-[4px] w-4/12 bg-pink-900" />
-                <span className="lg:text-[1.5rem] text-sm font-bold 2xl:text-4xl my-4 w-4/12 text-center border border-x-4 2xl:border-x-8 border-x-pink-900 text-pink-900">RECOMENDACIONES</span>
-                <div className="2xl:h-2 h-[4px] bg-pink-900 w-4/12" />
-            </div>
-            {/* ------------------------Desde aca estan las cards de categorias de los 3 ------------------------------------------*/}
+            <HrPersonality title={'RECOMENDACIONES'} />
             <CardRecomemnd recommedcontents={cardInfo.Recommend} />
-            {/* De Aca va lo Descatacado!. */}
+            <HrPersonality title={'PRODUCTOS DESTACADOS'} />
             <CardTop tops={cardInfo.Top} />
         </main>
     )
