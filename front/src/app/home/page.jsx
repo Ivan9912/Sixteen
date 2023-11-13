@@ -99,8 +99,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div>
-                <h1 className="lg:text-[3rem] text-lg my-4">PRODUCTOS DESTACADOS</h1>
+            <div className="w-full h-full flex flex-row items-center">
+                <div className="2xl:h-2 h-[4px] w-4/12 bg-pink-900" />
+                <span className="lg:text-[1.5rem] text-sm font-bold 2xl:text-4xl my-4 w-4/12 text-center border border-x-4 2xl:border-x-8 border-x-pink-900 text-pink-900">PRODUCTOS DESTACADOS</span>
+                <div className="2xl:h-2 h-[4px] bg-pink-900 w-4/12" />
             </div>
             {/* De Aca va lo Descatacado!. */}
             <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5 2xl:px-40 lg:px-44">
