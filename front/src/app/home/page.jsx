@@ -110,15 +110,13 @@ const cardInfo = {
 };
 
 export default function Home() {
-    return (
-        <main className="flex text-black flex-col items-center justify-center h-full select-none mt-16 lg:mt-28">
-            <TitleLogo component={'body'} />
-            <CarrouselMain widthCarrouselT={'w-11/12'} $autoSlice autoSlideInterval={10000} colorpg={'236, 72, 153'} heightpg={'0.3rem'} opacitypg={1} />
-            <CardInfo informations={cardInfo.Info} />
-            <HrPersonality title={'RECOMENDACIONES'} />
-            <CardRecomemnd recommedcontents={cardInfo.Recommend} />
-            <HrPersonality title={'PRODUCTOS DESTACADOS'} />
-            <CardTop tops={cardInfo.Top} />
-        </main>
-    )
+    return <main className="flex text-black flex-col items-center justify-center h-full select-none mt-16 lg:mt-28">
+        <TitleLogo component={'body'} />
+        <CarrouselMain widthCarrouselT={'w-11/12'} $autoSlice autoSlideInterval={10000} colorpg={'236, 72, 153'} heightpg={'0.3rem'} opacitypg={1} />
+        <CardInfo informations={cardInfo.Info} />
+        <HrPersonality title={'RECOMENDACIONES'} />
+        <CardRecomemnd recommedcontents={cardInfo.Recommend} />
+        <HrPersonality title={'PRODUCTOS DESTACADOS'} />
+        <CardTop tops={cardInfo.Top} />
+    </main>
 };
