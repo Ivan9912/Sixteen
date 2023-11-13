@@ -1,4 +1,4 @@
-import CardBasic from "@/components/cards/CardBasic";
+import CardBasic from "@/components/Cards/CardBasic";
 import { metadata } from "../layout";
 import GlobalList from "../../components/Main-Nav/DropDown/DropDownList";
 metadata.title = 'Sixteen | Catálogo'

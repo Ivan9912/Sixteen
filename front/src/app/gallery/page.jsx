@@ -1,4 +1,4 @@
-import CardBasic from "@/components/cards/CardBasic";
+import CardBasic from "@/components/Cards/CardBasic";
 import { metadata } from "../layout";
 metadata.title = 'Sixteen | Galería';
 
