@@ -53,69 +53,69 @@ export default function Home() {
                 <div className="2xl:h-2 h-[4px] bg-pink-900 w-4/12" />
             </div>
             {/* ------------------------Desde aca estan las cards de categorias de los 3 ------------------------------------------*/}
-            <div div className="grid grid-cols-1 lg:grid-cols-3 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5 2xl:px-80 lg:px-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>div]:my-10 [&>div]:my-5 2xl:px-80 lg:px-16">
                 <div className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
                     <div className="flex justify-center relative">
-                        <Image alt={"01"} src={'https://i.imgur.com/IglFLkP.png'} cover  width={286} height={286} className="rounded-t-lg" />
+                        <Image alt={"01"} src={'https://i.imgur.com/IglFLkP.png'} width={286} height={286} className="rounded-t-lg" />
                     </div>
                     <div className="h-full w-full flex justify-center">
-                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block" href={'/'}>VESTIDO DE MORLEY RAYADO</Link>
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block" href={'/'}>{'VESTIDO DE MORLEY RAYADO'}</Link>
                     </div>
                 </div>
                 <div className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
                     <div className="flex justify-center relative">
-                        <Image alt={"02"} src={'https://i.imgur.com/mrOkLUB.png'} cover  width={286} height={286} className="rounded-t-lg" />
+                        <Image alt={"02"} src={'https://i.imgur.com/mrOkLUB.png'} width={286} height={286} className="rounded-t-lg" />
                     </div>
                     <div className="h-full w-full flex justify-center">
-                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block" href={'/'}>VESTIDO RAYADO CON TAJO</Link>
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block" href={'/'}>{'VESTIDO RAYADO CON TAJO'}</Link>
                     </div>
                 </div>
                 <div className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75">
                     <div className="flex justify-center relative bg-center">
-                        <Image alt={"03"} src={'https://i.imgur.com/SpPNf9T.png'} cover  width={286} height={286} className="rounded-t-lg" />
+                        <Image alt={"03"} src={'https://i.imgur.com/SpPNf9T.png'} width={286} height={286} className="rounded-t-lg" />
                     </div>
                     <div className="h-full w-full flex justify-center">
-                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block" href={'/'}>LONAS</Link>
+                        <Link className="w-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block" href={'/'}>{'LONAS'}</Link>
                     </div>
                 </div>
             </div>
             <div className="w-full h-full flex flex-row items-center">
                 <div className="2xl:h-2 h-[4px] w-4/12 bg-pink-900" />
-                <span className="lg:text-[1.5rem] text-sm font-bold 2xl:text-4xl my-4 w-4/12 text-center border border-x-4 2xl:border-x-8 border-x-pink-900 text-pink-900">PRODUCTOS DESTACADOS</span>
+                <span className="lg:text-[1.5rem] text-sm font-bold 2xl:text-4xl my-4 w-4/12 text-center border border-x-4 2xl:border-x-8 border-x-pink-900 text-pink-900">{'PRODUCTOS DESTACADOS'}</span>
                 <div className="2xl:h-2 h-[4px] bg-pink-900 w-4/12" />
             </div>
             {/* De Aca va lo Descatacado!. */}
             <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 h-12/12 w-full justify-items-center lg:m-10 m-4 bg-black/5 lg:[&>a]:my-10 [&>a]:my-5 2xl:px-40 lg:px-44 mb-10">
                 <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"01AB"} src={'https://i.imgur.com/WkXoGvN.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <Image alt={"01AB"} src={'https://i.imgur.com/WkXoGvN.png'} width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
                     <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RS.FEARLESS</span>
                 </Link>
                 <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"02AB"} src={'https://i.imgur.com/PbwNjFr.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <Image alt={"02AB"} src={'https://i.imgur.com/PbwNjFr.png'} width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
                     <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RO.ONLY FLANS BLANCO</span>
                 </Link>
                 <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"03AB"} src={'https://i.imgur.com/TBl3TOy.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <Image alt={"03AB"} src={'https://i.imgur.com/TBl3TOy.png'} width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
                     <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RS.BAD BUNNY</span>
                 </Link>
                 <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"04AB"} src={'https://i.imgur.com/Z20PcfM.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <Image alt={"04AB"} src={'https://i.imgur.com/Z20PcfM.png'} width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
                     <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RO.ONLY FLANS NEGRO</span>
                 </Link>
                 <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"05AB"} src={'https://i.imgur.com/WkXoGvN.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <Image alt={"05AB"} src={'https://i.imgur.com/WkXoGvN.png'} width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
                     <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RS.FEARLESS</span>
                 </Link>
                 <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"06AB"} src={'https://i.imgur.com/PbwNjFr.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <Image alt={"06AB"} src={'https://i.imgur.com/PbwNjFr.png'} width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
                     <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RO.ONLY FLANS BLANCO</span>
                 </Link>
                 <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"07AB"} src={'https://i.imgur.com/TBl3TOy.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <Image alt={"07AB"} src={'https://i.imgur.com/TBl3TOy.png'} width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
                     <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RS.BAD BUNNY</span>
                 </Link>
                 <Link className="lg:h-[21rem] lg:w-72 h-56 w-64 bg-pink-600 rounded-lg border border-black/50 flex flex-col items-center hover:transition-transform hover:scale-105 hover:delay-75 hover:shadow-[25px_25px_30px_10px_rgba(236,72,156,.3)]" href={'/'}>
-                    <Image alt={"04AB"} src={'https://i.imgur.com/Z20PcfM.png'} cover  width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
+                    <Image alt={"04AB"} src={'https://i.imgur.com/Z20PcfM.png'} width={286} height={286} className="rounded-t-lg flex justify-center relative bg-center" />
                     <span className="w-full h-full text-center text-white text-xs font-semibold lg:text-sm lg:font-bold py-4 inline-block">RO.ONLY FLANS NEGRO</span>
                 </Link>
             </div>
