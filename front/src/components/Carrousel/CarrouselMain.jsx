@@ -20,9 +20,9 @@ export default function CarrouselMain({ widthCarrouselT, widTh, autoSlice=false,
                     <Carrousel autoSlice={autoSlice} autoSlideInterval={autoSlideInterval} colorpg={colorpg} heightpg={heightpg} opacitypg={opacitypg}>
                         {
                             [...images.map((image) => (
-                                <Image src={`https://i.imgur.com/${image}.jpg`} width={2000} height={600} key={`${image}-img-01`} alt={`${image}`} priority={true} />
+                                <Image src={`https://i.imgur.com/${image}.jpg`} width={1800} height={600} key={`${image}-img-01`} alt={`${image}`} priority={true} />
                             )),
-                            <video key={`${videos}-V`} src={`https://i.imgur.com/${videos}.mp4`} width={2000} height={600} className="lg:px-8" autoPlay loop muted />
+                            <video key={`${videos}-V`} src={`https://i.imgur.com/${videos}.mp4`} width={1800} height={600} className="lg:px-8" autoPlay loop muted />
                             ]}
                     </Carrousel>
                 </div>            
