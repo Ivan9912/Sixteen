@@ -1,31 +1,10 @@
-"use client"
+"use client";
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import Next from '../../../public/img_svg/form-next';
-import Previous from '../../../public/img_svg/form-previous';
-import ProgressBar from '../ProgressBar/ProgressBar';
+import { Next, Previous } from '../../../public/img_svg/IconsUtilities.js';
 import { Animation } from './logic.js';
-
-const dataInfo = [
-    {
-        title: "Sixteen Mayorista",
-        subTitle: "La Fabrica Mayorista",
-        HreF: "/"
-    },
-    {
-        title: "NEW SEASON",
-        subTitle: "Primavera - Verano | 2023",
-        HreF: "/"
-    },
-    {
-        title: "Somos Distribuidores",
-        subTitle: "Fabricación y ventas mayoristas orientada a la industria de la moda",
-        HreF: "/"
-    },
-    {
-        title: "SIXTEEN | 2023"
-    }
-]
+import DATACARROUSEL from '@/BBDD/DATACARROUSEL.json';
+import Link from 'next/link';
+import ProgressBar from '../ProgressBar/ProgressBar';
 
 export default function Carrousel({ children: cont, $autoSlice = true, autoSlideInterval = 3000, colorpg = '0, 255, 0', heightpg = '1rem', opacitypg = 1 }) {
 
@@ -57,10 +36,10 @@ export default function Carrousel({ children: cont, $autoSlice = true, autoSlide
             shimpgElement.classList.add('shimpg');
             shimpgElement.classList.add('after:animate-shimmer-pg');
             const slideInterval = setInterval(nextAutomatic, autoSlideInterval);
-    
+
             return () => clearInterval(slideInterval);
         };
-    
+
         if ($autoSlice) {
             return handleAutoSlice();
         }
@@ -77,23 +56,23 @@ export default function Carrousel({ children: cont, $autoSlice = true, autoSlide
                 <div className='absolute inset-0 flex items-center flex-grow w-full h-full lg:hover:bg-black/30'>
                     <div className='flex items-center p-2 lg:p-4 hover:bg-white/60 lg:hover:bg-black/0 lg:h-auto h-full lg:bg-black/0'>
                         <button className='h-full lg:h-auto lg:p-1 lg:rounded-full shadow lg:bg-white/60 text-gray-800 lg:hover:bg-white' onClick={prev}>
-                            <Previous className='w-7 h-7 lg:w-10 lg:h-10' />
+                            {Previous}
                         </button>
                     </div>
                     <div className='w-full h-full flex flex-row items-center justify-end'>
-                        <div className={`flex flex-col h-full items-end lg:p-4 rounded ${dataInfo[curr].subTitle == undefined ? 'justify-center nth-1:bg-black/0' : 'justify-start mt-10 lg:mt-60' }`}>
+                        <div className={`flex flex-col h-full items-end lg:p-4 rounded ${DATACARROUSEL[curr].subTitle == undefined ? 'justify-center nth-1:bg-black/0' : 'justify-start mt-10 lg:mt-60'}`}>
                             <div className={`text-end bg-black/60`}>
-                                <h1 className={`lg:text-6xl font-bold ${dataInfo[curr].title ? 'lg:p-4 p-1' : ''} text-transparent bg-clip-text bg-gradient-to-r from-pink-800 to-pink-200`}>{`${dataInfo[curr].title ? dataInfo[curr].title : ''}`}</h1>
+                                <h1 className={`lg:text-6xl font-bold ${DATACARROUSEL[curr].title ? 'lg:p-4 p-1' : ''} text-transparent bg-clip-text bg-gradient-to-r from-pink-800 to-pink-200`}>{`${DATACARROUSEL[curr].title ? DATACARROUSEL[curr].title : ''}`}</h1>
                             </div>
                             <div className='lg:mb-4 mb-1 bg-white/60 w-auto text-center'>
-                                <h1 className={`text-black/90 lg:text-xl text-[12px] ${dataInfo[curr].subTitle ? 'lg:p-4 p-1' : ''}`}>{`${dataInfo[curr].subTitle ? dataInfo[curr].subTitle : ''}`}</h1>
+                                <h1 className={`text-black/90 lg:text-xl text-[12px] ${DATACARROUSEL[curr].subTitle ? 'lg:p-4 p-1' : ''}`}>{`${DATACARROUSEL[curr].subTitle ? DATACARROUSEL[curr].subTitle : ''}`}</h1>
                             </div>
-                            <Link href={`${dataInfo[curr] ? dataInfo[curr].HreF : '/'}`} className={`${dataInfo[curr].HreF ? 'visible' : 'invisible'} lg:px-4 lg:py-2 text-[10px] lg:text-[12px] py-1 px-2 text-white lg:font-medium rounded-md transition ease-in-out delay-150 bg-pink-800 hover:-translate-y-1 lg:hover:font-semibold hover:scale-110 hover:bg-pink-500 duration-100`}>Ver Más</Link>
+                            <Link href={`${DATACARROUSEL[curr] ? DATACARROUSEL[curr].HreF : '/'}`} className={`${DATACARROUSEL[curr].HreF ? 'visible' : 'invisible'} lg:px-4 lg:py-2 text-[10px] lg:text-[12px] py-1 px-2 text-white lg:font-medium rounded-md transition ease-in-out delay-150 bg-pink-800 hover:-translate-y-1 lg:hover:font-semibold hover:scale-110 hover:bg-pink-500 duration-100`}>Ver Más</Link>
                         </div>
                     </div>
                     <div className='flex items-center p-2 lg:p-4 hover:bg-white/60 lg:hover:bg-black/0 lg:h-auto h-full lg:bg-black/0'>
                         <button className='h-full lg:h-auto lg:p-1 lg:rounded-full shadow lg:bg-white/60 text-gray-800 lg:hover:bg-white' onClick={next}>
-                            <Next className='w-7 h-7 lg:w-10 lg:h-10' />
+                            {Next}
                         </button>
                     </div>
                 </div>

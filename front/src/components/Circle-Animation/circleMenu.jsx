@@ -3,9 +3,7 @@ import Link from "next/link";
 import { useState } from 'react';
 import SOCIALNETWORKS from '@/BBDD/SOCIALNETWORKS.json';
 import * as Icons from '../../../public/img_redes_svg/IconsSocialNetwork.js';
-
-import IconPlus from '../../../public/img_svg/add.jsx';
-
+import { Add } from '../../../public/img_svg/IconsUtilities.js';
 
 export default function CircleMenu() {
     const listSocial = SOCIALNETWORKS.length;
@@ -20,7 +18,7 @@ export default function CircleMenu() {
             <div className={`menu_1 ${isOpen ? 'active' : ''} min-h-[25vh] bg-fixed flex justify-center items-center relative w-52 h-52`} >
                 <div className="toggle_menu w-14 h-14 absolute bg-white flex justify-center z-[10000] rounded-full cursor-pointer text-3xl">
                     <button onClick={toggleMenu} className="w-full h-full flex justify-center items-center">
-                        <IconPlus />
+                        {Add}
                     </button>
                 </div>
                 {

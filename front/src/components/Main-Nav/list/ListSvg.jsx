@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Carrito from '../../../../public/img_svg/shopping_cart.jsx';
-import UserSVG from '../../../../public/img_svg/user-manager.jsx';
+import { CartIcon, UserIcon } from '../../../../public/img_svg/IconsUtilities.js';
 import SearchBar from "@/components/Main-Nav/SearchBar.jsx";
 
 export default function ListSvg() {
@@ -12,12 +11,12 @@ export default function ListSvg() {
             <span class="relative inline-flex rounded-full bg-sky-500">1</span>
             </span> */}
             <Link href="/cart" title="Carrito">
-                <Carrito className="w-5 h-5" />
+                {CartIcon}
             </Link>
         </li>
         <li className='hover:box-content hover:border hover:border-pink-500/20 hover:rounded hover:bg-pink-500/10 hover:shadow-xl active:shadow-2xl'>
             <Link href="/admin" title="Admin">
-                <UserSVG className="w-5 h-5" />
+                {UserIcon}
             </Link>
         </li>
     </ul>

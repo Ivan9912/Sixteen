@@ -1,6 +1,5 @@
 "use client";
-import LogoMenuHamburg from '../../../../public/img_svg/menu.jsx';
-import LogoExit from '../../../../public/img_svg/close.jsx';
+import { Close, MenuIcon } from '../../../../public/img_svg/IconsUtilities.js';
 import { useState } from 'react';
 import List from './SubCategories/List.jsx';
 
@@ -11,7 +10,7 @@ export default function MenuHamburgButton({ props }) {
             <ul className={`md:hidden basis-0 flex justify-center content-center cursor-pointer p-3 hover:rounded hover:border-zinc-600 hover:bg-slate-100 hover:shadow-xl active:shadow-2xl ${isOpenMenu ? 'activeMenuHamburg' : ''} hover:text-red-800`}>
                 <span onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
                     {
-                        isOpenMenu ? <LogoExit className="w-5 h-5 text-black hover:text-red-800" /> : <LogoMenuHamburg className="w-5 h-5" />
+                        isOpenMenu ? Close : MenuIcon
                     }
                 </span>
             </ul>
