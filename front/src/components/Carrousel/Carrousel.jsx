@@ -44,12 +44,19 @@ export default function Carrousel({ children: cont, $autoSlice = true, autoSlide
         })
     };
 
+    const nextAutomatic = () => {
+        Animation();
+        setCurr((c) => {
+            return c === cont.length - 1 ? 0 : c + 1;
+        })
+    };
+
     useEffect(() => {
         const shimpgElement = document.querySelector('.animpg');
         const handleAutoSlice = () => {
             shimpgElement.classList.add('shimpg');
             shimpgElement.classList.add('after:animate-shimmer-pg');
-            const slideInterval = setInterval(next, autoSlideInterval);
+            const slideInterval = setInterval(nextAutomatic, autoSlideInterval);
     
             return () => clearInterval(slideInterval);
         };
@@ -57,7 +64,7 @@ export default function Carrousel({ children: cont, $autoSlice = true, autoSlide
         if ($autoSlice) {
             return handleAutoSlice();
         }
-    }, [$autoSlice, autoSlideInterval, next]);
+    }, [$autoSlice, autoSlideInterval, nextAutomatic]);
 
     return (
         <div className='w-full flex flex-col justify-center'>
