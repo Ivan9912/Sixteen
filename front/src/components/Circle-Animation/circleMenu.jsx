@@ -1,56 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useState } from 'react';
+import SOCIALNETWORKS from '@/BBDD/SOCIALNETWORKS.json';
+import * as Icons from '../../../public/img_redes_svg/IconsSocialNetwork.js';
 
 import IconPlus from '../../../public/img_svg/add.jsx';
-import IconFacebook from '../../../public/img_redes_svg/facebook96.jsx';
-import IconInstagram from '../../../public/img_redes_svg/instagram96.jsx';
-import IconEmail from '../../../public/img_redes_svg/gmail96.jsx';
-import IconPhone from '../../../public/img_redes_svg/telefono96.jsx';
-import IconTiktok from '../../../public/img_redes_svg/tiktok96.jsx';
-import IconWhatsapp from '../../../public/img_redes_svg/whatsapp96.jsx';
 
-const SocialNetworks = [
-    {
-        name: "Facebook",
-        background_color: "rgba(256, 256, 256, .7)",
-        link: "https://www.facebook.com/",
-        component: <IconFacebook />
-    },
-    {
-        name: "Instagram",
-        background_color: "rgba(256, 256, 256, .7)",
-        link: "https://www.instagram.com/",
-        component: <IconInstagram />
-    },
-    {
-        name: "Gmail",
-        background_color: "rgba(256, 256, 256, .7)",
-        link: "mailto:ivan.maidana9912@gmail.com",
-        component: <IconEmail />
-    },
-    {
-        name: "Phone",
-        background_color: "rgba(256, 256, 256, .7)",
-        link: "tel:+5491157416209",
-        component: <IconPhone />
-    },
-    {
-        name: "Tik Tok",
-        background_color: "rgba(256, 256, 256, .7)",
-        link: "https://www.tiktok.com/es/",
-        component: <IconTiktok />
-    },
-    {
-        name: "Whatsapp",
-        background_color: "rgba(256, 256, 256, .7)",
-        link: "https://api.whatsapp.com/send?phone=5491157416210",
-        component: <IconWhatsapp />
-    }
-];
 
 export default function CircleMenu() {
-    const listSocial = SocialNetworks.length;
+    const listSocial = SOCIALNETWORKS.length;
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -66,10 +24,10 @@ export default function CircleMenu() {
                     </button>
                 </div>
                 {
-                    SocialNetworks.map((net, i) => {
+                    SOCIALNETWORKS.map((net, i) => {
                         return <li style={{ '--i': i, '--clr': net.background_color }} key={net.name}>
                             <Link target="_blank" rel="noopener noreferrer" href={net.link}>
-                                {net.component}
+                                {Icons[net.component]}
                             </Link>
                         </li>
                     })

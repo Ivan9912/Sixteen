@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Facebook",
+        "background_color": "rgba(256, 256, 256, .7)",
+        "link": "https://www.facebook.com/",
+        "component": "Facebook"
+    },
+    {
+        "name": "Instagram",
+        "background_color": "rgba(256, 256, 256, .7)",
+        "link": "https://www.instagram.com/",
+        "component": "Instagram"
+    },
+    {
+        "name": "Gmail",
+        "background_color": "rgba(256, 256, 256, .7)",
+        "link": "mailto:ivan.maidana9912@gmail.com",
+        "component": "Gmail"
+    },
+    {
+        "name": "Phone",
+        "background_color": "rgba(256, 256, 256, .7)",
+        "link": "tel:+5491157416209",
+        "component": "Phone"
+    },
+    {
+        "name": "Tik Tok",
+        "background_color": "rgba(256, 256, 256, .7)",
+        "link": "https://www.tiktok.com/es/",
+        "component": "Tiktok"
+    },
+    {
+        "name": "Whatsapp",
+        "background_color": "rgba(256, 256, 256, .7)",
+        "link": "https://api.whatsapp.com/send?phone=5491157416210",
+        "component": "WhatsApp"
+    }
+]

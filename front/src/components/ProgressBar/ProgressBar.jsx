@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 export default function ProgressBar({ color, heightpg, time, opacity }) {
     return (
