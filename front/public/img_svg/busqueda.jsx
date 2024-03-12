@@ -3,8 +3,8 @@ export default function BusquedaSvg(props) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
-      width="50px"
-      height="50px"
+      width="10px"
+      height="10px"
       className="hover:text-pink-500 hover:fill-pink-500"
       {...props}
     >
