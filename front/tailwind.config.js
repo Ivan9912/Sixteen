@@ -116,7 +116,7 @@ module.exports = {
           },
           '&.active .toggle_menu': {
             transform: 'rotate(315deg)',
-            border: '2px solid ##ec48993d', //Mejor que no funcione por eso las 2 ##
+            border: '2px solid var(--colorCicleHover)', //Mejor que no funcione por eso las 2 ##
           }
         },
         '.shimpg': {
