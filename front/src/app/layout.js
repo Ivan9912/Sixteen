@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} bg-[#f5f5f5] web-scrollbar:scroll-color web-scrollbar-thumb:scroll-thumb-color antialiased`}>
         <NavBar />
         {children}
-        <CircleMenu />
+        <CircleMenu colorCicle={'#ec489926'} colorCicleHover={'#ec4899'} />
         <Footer />
       </body>
     </html>

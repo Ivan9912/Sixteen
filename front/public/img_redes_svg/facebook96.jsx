@@ -34,7 +34,7 @@ export default function Facebook96Svg(props) {
       />
       <path
         d="M33.365 16H36v-3.754c-.492-.064-1.531-.203-3.495-.203-4.101 0-6.505 2.08-6.505 6.819V22h-4v4h4v11h5V26h3.938l.618-4H31v-2.465c0-1.874.612-3.535 2.365-3.535z"
-        fill="#035fff"
+        fill="#ffffff"
       />
     </svg>
   )

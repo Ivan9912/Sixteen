@@ -72,12 +72,12 @@ module.exports = {
           },
         },
         '.toggle_menu': {
-          'box-shadow': '0 0px 4px #ec489926',
+          'box-shadow': '0 0px 4px var(--colorCicle)',
           transition: 'transform 1.25s',
           '&:hover': {
             transition: '1000ms',
             'box-shadow': '10px rgba(0, 0, 0, 0.863)',
-            border: '2px solid #ec4899'
+            border: '2px solid var(--colorCicleHover)'
           },
         },
         '.menu_1': {
@@ -101,11 +101,11 @@ module.exports = {
               'background-color': 'var(--clr)',
               'border-radius': '50%',
               transform: 'rotate(calc(360deg / calc(var(--list_social) * -1) * var(--i)))',
-              'box-shadow': '0 3px 4px #ec489926',
+              'box-shadow': '0 3px 4px var(--colorCicleHover)',
 
               '&:hover': {
                 transition: '1000ms',
-                border: '2px solid #ec4899'
+                border: '2px solid var(--colorCicle)'
               }
             }
           },
@@ -116,7 +116,7 @@ module.exports = {
           },
           '&.active .toggle_menu': {
             transform: 'rotate(315deg)',
-            border: '2px solid #ec48993d',
+            border: '2px solid ##ec48993d', //Mejor que no funcione por eso las 2 ##
           }
         },
         '.shimpg': {
