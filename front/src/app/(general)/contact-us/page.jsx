@@ -1,5 +1,5 @@
 import CardBasic from "@/components/cards/CardBasic";
-import { metadata } from "../layout";
+import { metadata } from "../home/layout";
 metadata.title = 'Sixteen | Contactànos';
 
 export default function ContactUs() {

@@ -1,5 +1,5 @@
 import CardBasic from "@/components/cards/CardBasic";
-import { metadata } from "../layout";
+import { metadata } from "../home/layout";
 import GlobalList from "../../components/Main-Nav/DropDown/DropDownList";
 metadata.title = 'Sixteen | Catálogo'
 

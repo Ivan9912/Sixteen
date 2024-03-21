@@ -1,4 +1,4 @@
-import { metadata } from "../layout";
+import { metadata } from "../home/layout";
 metadata.title = 'Sixteen | Sobre Nosotros';
 
 export default function AboutUs() {

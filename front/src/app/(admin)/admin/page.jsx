@@ -1,8 +1,8 @@
-'use client'
+'use client';
 import Link from 'next/link.js';
-import AdminLayout from './layoutAdm.js';
-import { metadata } from './layoutAdm.js';
-metadata.title = 'Sixteen | Admin';
+import AdminLayout from './layout.js';
+import { metadataAdmin } from './layout.js';
+metadataAdmin.title = 'Sixteen | Admin';
 
 export default function Admin() {
     let username = ''

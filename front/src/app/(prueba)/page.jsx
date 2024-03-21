@@ -1,5 +1,5 @@
 import CardBasic from "@/components/cards/CardBasic";
-import { metadata } from "../layout";
+import { metadata } from "../home/layout";
 import Prueba from "./Prueba";
 
 metadata.title = 'PRUEBA';

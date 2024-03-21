@@ -3,22 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3002",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@svgr/webpack": "8.1.0",
-    "next": "13.5.6",
+    "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "autoprefixer": "^10",
+    "autoprefixer": "^10.0.1",
     "eslint": "^8",
-    "eslint-config-next": "13.5.6",
+    "eslint-config-next": "14.1.4",
     "postcss": "^8",
-    "tailwindcss": "^3"
+    "tailwindcss": "^3.3.0"
   }
 }

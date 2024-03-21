@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import './globals.css'
+import '@/app/(general)/globals.css'
 import NavBar from '@/components/Main-Nav/NavBar.jsx'
 import Footer from '@/components/Main-Footer/Footer.jsx'
 import CircleMenu from '@/components/Circle-Animation/circleMenu.jsx'
